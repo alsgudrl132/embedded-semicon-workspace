@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 // sizeof() 연산자 <- 함수아님
 // int main() {
@@ -413,23 +414,356 @@
         int data[MAX];  이것은 가능하다
 */
 
-int main() {
-    int arr[5];      // 4바이트인 int타입의 배열 5칸 선언
-    int byteArr = 0; // 배열의 바이트 크기를 저장할 변수 선언
-    int size = 0;    // 배열의 크기를 지정할 변수
+// int main() {
+//     int arr[5];      // 4바이트인 int타입의 배열 5칸 선언
+//     int byteArr = 0; // 배열의 바이트 크기를 저장할 변수 선언
+//     int size = 0;    // 배열의 크기를 지정할 변수
 
-    byteArr = sizeof(arr);
-    printf("배열의 바이트 크기 : %d\n", byteArr);
+//     byteArr = sizeof(arr);
+//     printf("배열의 바이트 크기 : %d\n", byteArr);
 
-    size = sizeof(arr) / sizeof(arr[0]); //배열의 바이트 크기 : 20
-    printf("배열의 크기 : %d\n", size);    //배열의 크기 : 5
+//     size = sizeof(arr) / sizeof(arr[0]); //배열의 바이트 크기 : 20
+//     printf("배열의 크기 : %d\n", size);    //배열의 크기 : 5
 
-    // 배열의 각 요소를 0으로 초기화
-    for(int i = 0; i < size; i++) {
-        arr[i] = 0;
-    }
+//     // 배열의 각 요소를 0으로 초기화
+//     for(int i = 0; i < size; i++) {
+//         arr[i] = 0;
+//     }
     
-    for(int i = 0; i < size; i++) {
-        printf("arr[%d] : %d\n", i, arr[i]);
-    }
+//     for(int i = 0; i < size; i++) {
+//         printf("arr[%d] : %d\n", i, arr[i]);
+//     }
+// }
+
+// #define ARR_SIZE 5       // 매크로 상수로 지정
+
+// int add(int a, int b);
+
+// int main() {
+//     int arr[ARR_SIZE] = {0}; // 배열 전체를 0으로 초기화
+
+//     arr[0] = 5;
+//     arr[1] = arr[0] + 10;
+//     arr[2] = add(arr[0], arr[1]); // 함수의 인자로 사용
+
+//     printf("정수 2개를 입력 하세요 : ");
+//     scanf("%d %d", &arr[3], &arr[4]);
+
+//     for(int i = 0; i < ARR_SIZE; i++) {
+//         printf(" %d ", arr[i]);
+//     }
+//     printf("\n\n");
+// }
+
+// int add(int a, int b) {
+//     return a + b;
+// }
+
+// int main() {
+//     int i = 5;
+//     char c = 'A';
+
+//     printf(" 변수 i  의 주소값 : %p\t 변수 i의 값 : %d\n", &i, i);
+//     printf(" 변수 c  의 주소값 : %p\t 변수 c의 값 : %d\n", &c, c);
+// }
+
+// int main() {
+//     int arr[4];
+//     arr[0] = 1;
+//     arr[1] = 3;
+//     arr[2] = 5;
+//     arr[3] = 7;
+//     printf("arr 배열의 첫번째 주소값 : %p\t 요소값 : %d\n", &arr[0], arr[0]);
+//     printf("arr 배열의 두번째 주소값 : %p\t 요소값 : %d\n", &arr[1], arr[1]);
+//     printf("arr 배열의 세번째 주소값 : %p\t 요소값 : %d\n", &arr[2], arr[2]);
+//     printf("arr 배열의 네번째 주소값 : %p\t 요소값 : %d\n", &arr[3], arr[3]);
+// }
+
+// int main() {
+//     // 2차원 배열
+//     int arr[3][3] = {
+//         {1,2,3},
+//         {4,5,6},
+//         {7,8,9}
+//     };
+
+//     // int arr[3][3] = {1,2,3,4,5,6,7,8,9}; // 해당 2차원배열은 위와 동일하다.
+
+//     // printf("1행 1열 : %d | ", arr[0][0]);
+//     // printf("1행 2열 : %d | ", arr[0][1]);
+//     // printf("1행 3열 : %d\n ", arr[0][2]);
+//     // printf("2행 1열 : %d | ", arr[1][0]);
+//     // printf("2행 2열 : %d | ", arr[1][1]);
+//     // printf("2행 3열 : %d\n ", arr[1][2]);
+//     // printf("3행 1열 : %d | ", arr[2][0]);
+//     // printf("3행 2열 : %d | ", arr[2][1]);
+//     // printf("3행 3열 : %d | ", arr[2][2]);
+
+//     for(int i = 0; i < 3; i++) {
+//         for(int j = 0; j < 3; j++) {
+//             printf("%d행 %d열 : %d", i+1, j+1, arr[i][j]);
+//             if(j < 2) printf(" | ");
+//             if(j == 2) printf("\n");
+//         }
+//     }
+
+//     // 1행 1열 : 1 | 1행 2열 : 2 | 1행 3열 : 3
+//     // 2행 1열 : 4 | 2행 2열 : 5 | 2행 3열 : 6
+//     // 3행 1열 : 7 | 3행 2열 : 8 | 3행 3열 : 9
+// }
+
+// int main() {
+//     int arr[3][3] = {
+//         {1,2,3},
+//         {4,5,6},
+//         {7,8,9}
+//     };
+
+//     for(int i = 0; i < 3; i++) {
+//         for(int j = 0; j < 3; j++) {
+//             printf("%d행 %d열 : %d | 주소 : %p\n", i+1, j+1, arr[i][j], &arr[i][j]);
+//         }
+//     }
+// }
+
+// int main() {
+//     // 포인터 선언
+//     // 데이터형 *변수명 또는 데이터형 변수명*
+//     // int *ptr 또는 ptr* 이런식
+//     // 포인터의 크기는 일정
+//     // 포인터의 크기는 플랫폼에 따라서 결정
+//     // 32bit : 4byte, 64bit : 8byte
+
+//     int *pi;        // int 타입의 포인터 변수 선언
+//     double *pd;     // 더블 타입의 포인터 변수 선언
+//     char *pc;       // 캐릭터 타입의 포인터 변수 선언
+
+//     // 64비트 운영체제이기때문에 모두 8의 크기를 보여줌
+//     printf("int형의 포인터 크기 : %d\n", sizeof(pi));
+//     printf("double형의 포인터 크기 : %d\n", sizeof(pd));
+//     printf("char형의 포인터 크기 : %d\n", sizeof(pc));
+// }
+
+// int main() {
+//     int a;
+//     a = 2;
+//     printf("%p\n", &a); // 0x7fffffffd9f4 <- 개인마다 틀림
+// }
+
+// int main() {
+//     int *ptr;    
+//     int a;
+
+//     ptr = &a; // a라는 변수의 주소값을 ptr이라는 주소에 위치시킨다.
+//     printf("포인터 변수 ptr에 들어있는 것(값) : %p\n", ptr);        //포인터 변수 ptr에 들어있는 것(값) : 0x7fffffffd9ec
+//     printf("포인터 변수 ptr에 들어있는 것(값) : %p\n", &ptr);       //포인터 변수 ptr에 들어있는 것(값) : 0x7fffffffd9f0
+//     printf("int a변수의 메모리 주소값 : %p\n : ", &a);             //int a변수의 메모리 주소값 : 0x7fffffffd9ec
+// }
+
+// int main() {
+//     int *ptr;
+//     int a = 2;
+
+//     ptr = &a;
+    
+//     printf("a의 값 : %d\n", a);
+//     printf("a의 주소값 : %p\n", &a); // a의 주소 0x7fffffffd9ec
+
+//     printf("*ptr의 값 : %d\n", *ptr); // a의 주소에 가지고있는 값을 반환 2
+//     printf("ptr의 가리키는 주소 : %p\n", ptr); // ptr이 가리키는 주소, 즉 a의 값이 저장되어있는 주소를 반환 0x7fffffffd9ec
+// }
+
+// int main() {
+//     int a, b; // 일반 변수 선언
+//     int *ptr; // 여기에서 int의 의미는 포인터가 가리키는 곳의 데이터 타입
+
+//     ptr = &a; // 포인터 ptr 변수에 a의 주소값으로 저장
+//     *ptr = 2; // 포인터 ptr이 가리키는곳에 데이터를 2로 저장
+//     ptr = &b; // 포인터 ptr 변수에 b의 주소값으로 변경 저장 (변수니까 변경 가능)
+//     *ptr = 3; // 포인터 ptr이 가리키는곳에 데이터를 3으로 저장
+
+//     printf(" a의 값 : %d\n", a); // 2
+//     printf(" b의 값 : %d\n", b); // 3
+// }
+
+// int main() {
+//     int a, b;
+//     int *const ptr = &a; // const로 한것은 반드시 선언과 동시에 초기화 해야함
+    
+//     *ptr = 3; // 정상 (포인터가 가리키는곳의 값을 변경가능)
+//     ptr = &b; // 오류 (포인터가 가리키는곳은 변경 불가)
+// }
+
+// // 포인터의 주소값 덧셈
+// int main() {
+//     int a;
+//     char b;
+//     double c;
+
+//     int *pa = &a;
+//     char *pb = &b;
+//     double *pc = &c;
+    
+//     printf("pa의 값 : %p\n", pa);               // pa의 값 : 0x7fffffffd9d4
+//     printf("pa + 1의 값 : %p\n", pa + 1);       // pa + 1의 값 : 0x7fffffffd9d8
+//      printf("pb의 값 : %p\n", pb);              // pb의 값 : 0x7fffffffd9d3
+//     printf("pb + 1의 값 : %p\n", pb + 1);       // pb + 1의 값 : 0x7fffffffd9d4
+//      printf("pc의 값 : %p\n", pc);              // pc의 값 : 0x7fffffffd9d8
+//     printf("pc + 1의 값 : %p\n", pc + 1);       // pc + 1의 값 : 0x7fffffffd9e0
+// }
+
+// int main() {
+//     int a;
+//     int *pa = &a;
+//     int *pb;
+
+//     *pa = 3;
+//     pb = pa;
+
+//     printf("pa가 가리키는 것의 값 : %d\n", *pa);
+//     printf("pb가 가리키는 것의 값 : %d\n", *pa);
+// }
+
+// // 배열과 포인터 관계
+// int main() {
+//     int arr[10] = {1,2,3,4,5,6,7,8,9,10};
+
+//     for(int i = 0; i < 10; i++) {
+//         printf("arr[%d]의 주소값 : %p\n", i , &arr[i]);
+//     }
+// }
+
+// arr[0]과 주소값의 관계
+// int main() {
+//     int arr[3] = {1,2,3};
+
+//     int *parr = arr;
+//     printf("sizeof(arr) : %d\n", sizeof(arr));      // sizeof(arr) : 12
+//     printf("sizeof(parr) : %d\n", sizeof(parr));    // sizeof(parr) : 8
+//     // C언어에서 배열의 이름이 sizeof, &(주소값)연산자 등과 같이 사용할때를 제외하면
+//     // 배열의 이름이 암묵적으로 첫번째 원소를 가리키는 포인터 타입으로 변환된다
+// }
+
+// int main() {
+//     int arr[3] = {1,2,3};
+
+//     int *parr;
+//     parr = arr; // parr = &arr[0];
+//     // arr[i] --> (arr+i) << 컴파일러가 이렇게 해석한다
+//     printf("arr[1] : %d\n", arr[1]);
+//     printf("parr[1] : %d\n", parr[1]);
+// }
+
+// int main() {
+//     int arr[10] = {100,99,87,67,78,78,56,56,78,90};
+//     int *parr = arr;    // 포인터변수 선언과 동시에 배열을 가르킴 (0번 인덱스)
+//     int sum;
+
+//     while(parr - arr <= 9) {
+//         sum += (*parr); // sum = sum + (*parr);
+//         parr++;
+//     }
+//     printf("평균은 : %d\n", sum / 10);
+
+//     printf("parr - arr : %d\n", parr - arr);
+// }
+
+// int main() {
+//     int *a;
+//     int *pa;
+//     int **ppa;
+
+//     pa = &a;
+//     ppa = &pa;
+
+//     a = 3;
+
+//     printf("a의 값 : %d || *pa : %d || **ppa : %d \n", a, *pa, **ppa);
+//     printf("a의 주소 : %p || pa가리키는 주소 : %p || *ppa의 저장값 : %p\n", &a, pa, *ppa);
+//     printf("pa의 주소 : %p || ppa가리키는 주소 : %p \n", &pa, ppa);
+// }
+
+// int main() {
+//     int arr[2][3];
+//     printf("arr[0] : %p\n", arr[0]);            // arr[0] : 0x7fffffffd9e0
+//     printf("&arr[0][0] : %p\n", &arr[0][0]);    // &arr[0][0] : 0x7fffffffd9e0
+//     printf("arr[1] : %p\n", arr[1]);            // arr[1] : 0x7fffffffd9ec
+//     printf("&arr[1][0] : %p\n", &arr[1][0]);    // &arr[1][0] : 0x7fffffffd9ec
+// }
+
+// struct human    // human 이라는 구조체 정의
+// {
+//     int age;    // 나이 -> 멤버변수
+//     int height; // 키 -> 멤버변수
+//     int weight; // 몸무게 -> 멤버변수
+// };
+
+// int main() {
+//     struct human info;  // struct human 이라는 데이터형, info라는 변수명
+
+//     // 변수를 초기화
+//     info.age = 29;
+//     info.height = 177;
+//     info.weight = 72;
+
+//     printf("info의 멤버변수 키는? : %d\n", info.height);    // info의 멤버변수 키는? : 177
+// }
+
+// struct contact
+// {
+//     char name[20];
+//     char phone[20];
+//     int ringtone;
+// };
+
+
+// int main() {
+//     struct contact ct = {"김석진", "01011112222", 0};
+//     struct contact ct1 ={0}, ct2 = {0};
+//     struct contact ct2 = ct;
+    
+//     ct.ringtone = 5;
+//     strcpy(ct.phone, "01033334444"); // 01033334444를 ct.phone으로 카피해서 넣는다는 함수
+//     printf("이름 : %s\n", ct.name);
+//     printf("전번 : %s\n", ct.phone);
+//     printf("벨소리 : %d\n", ct.ringtone);
+
+//     printf("이름 : %s\n", ct1.name);
+//     printf("전번 : %s\n", ct1.phone);
+//     printf("벨소리 : %d\n", ct1.ringtone);
+
+//     printf("이름 : %s\n", ct2.name);
+//     printf("전번 : %s\n", ct2.phone);
+//     printf("벨소리 : %d\n", ct2.ringtone);
+// }
+
+// // C언어는 문자열이없다.
+// // 문자열 표현방법은 배열에 저장(char)
+// // 배열의 마지막인덱스에 \0 NULL 자리가 있어야한다.
+
+// typedef unsigned int myunsignedInteger // 자료형 재 정의
+
+// typedef struct food
+// {
+//     char name[10];
+//     int price;
+//     int cookTime;
+//     int preperence;
+// } FOOD;
+
+// int main() {
+//     FOOD good = {"test", 30, 50, 100};
+//     printf("name: %s\n", good.name);
+// }
+
+typedef struct test {
+    int a; // 0x1234(예시주소)
+    int b; // 0x1238(예시주소)
+} TEST;
+
+int main() {
+    TEST st = {0}; // st.a , st.b를 0으로 초기화
+    TEST *ptr; // struct test 타입의 구조체를 가리키는 포인터 변수(구조체 아님)
+
+    ptr = &st;
 }
