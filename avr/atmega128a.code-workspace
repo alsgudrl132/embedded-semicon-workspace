@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "atmega128a"
+		}
+	],
+	"settings": {
+		"cmake.configureArgs": [
+			"-DAVR_TOOLCHAIN_DIR=/home/user12/tools/avr8",
+			"-DCMAKE_MAKE_PROGRAM=/usr/bin/make"
+		],
+		"cmake.generator": "Unix Makefiles"
+	}
+}
