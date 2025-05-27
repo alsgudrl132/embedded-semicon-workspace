@@ -9,6 +9,9 @@
 			"-DAVR_TOOLCHAIN_DIR=/home/user12/tools/avr8",
 			"-DCMAKE_MAKE_PROGRAM=/usr/bin/make"
 		],
-		"cmake.generator": "Unix Makefiles"
+		"cmake.generator": "Unix Makefiles",
+		"files.associations": {
+			"io.h": "c"
+		}
 	}
 }
