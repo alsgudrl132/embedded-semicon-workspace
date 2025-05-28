@@ -5,6 +5,7 @@ cmake_policy(SET CMP0009 NEW)
 # SRC_FILES at CMakeLists.txt:10 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/user12/workspace_semicon/avr/atmega128a/*.c")
 set(OLD_GLOB
+  "/home/user12/workspace_semicon/avr/atmega128a/led.c"
   "/home/user12/workspace_semicon/avr/atmega128a/main.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

@@ -69,10 +69,24 @@ include CMakeFiles/atmega128a.elf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/atmega128a.elf.dir/flags.make
 
+CMakeFiles/atmega128a.elf.dir/led.c.obj: CMakeFiles/atmega128a.elf.dir/flags.make
+CMakeFiles/atmega128a.elf.dir/led.c.obj: /home/user12/workspace_semicon/avr/atmega128a/led.c
+CMakeFiles/atmega128a.elf.dir/led.c.obj: CMakeFiles/atmega128a.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user12/workspace_semicon/avr/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/atmega128a.elf.dir/led.c.obj"
+	/home/user12/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/atmega128a.elf.dir/led.c.obj -MF CMakeFiles/atmega128a.elf.dir/led.c.obj.d -o CMakeFiles/atmega128a.elf.dir/led.c.obj -c /home/user12/workspace_semicon/avr/atmega128a/led.c
+
+CMakeFiles/atmega128a.elf.dir/led.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/atmega128a.elf.dir/led.c.i"
+	/home/user12/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user12/workspace_semicon/avr/atmega128a/led.c > CMakeFiles/atmega128a.elf.dir/led.c.i
+
+CMakeFiles/atmega128a.elf.dir/led.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/atmega128a.elf.dir/led.c.s"
+	/home/user12/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user12/workspace_semicon/avr/atmega128a/led.c -o CMakeFiles/atmega128a.elf.dir/led.c.s
+
 CMakeFiles/atmega128a.elf.dir/main.c.obj: CMakeFiles/atmega128a.elf.dir/flags.make
 CMakeFiles/atmega128a.elf.dir/main.c.obj: /home/user12/workspace_semicon/avr/atmega128a/main.c
 CMakeFiles/atmega128a.elf.dir/main.c.obj: CMakeFiles/atmega128a.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user12/workspace_semicon/avr/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/atmega128a.elf.dir/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/user12/workspace_semicon/avr/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/atmega128a.elf.dir/main.c.obj"
 	/home/user12/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/atmega128a.elf.dir/main.c.obj -MF CMakeFiles/atmega128a.elf.dir/main.c.obj.d -o CMakeFiles/atmega128a.elf.dir/main.c.obj -c /home/user12/workspace_semicon/avr/atmega128a/main.c
 
 CMakeFiles/atmega128a.elf.dir/main.c.i: cmake_force
@@ -85,15 +99,17 @@ CMakeFiles/atmega128a.elf.dir/main.c.s: cmake_force
 
 # Object files for target atmega128a.elf
 atmega128a_elf_OBJECTS = \
+"CMakeFiles/atmega128a.elf.dir/led.c.obj" \
 "CMakeFiles/atmega128a.elf.dir/main.c.obj"
 
 # External object files for target atmega128a.elf
 atmega128a_elf_EXTERNAL_OBJECTS =
 
+atmega128a.elf: CMakeFiles/atmega128a.elf.dir/led.c.obj
 atmega128a.elf: CMakeFiles/atmega128a.elf.dir/main.c.obj
 atmega128a.elf: CMakeFiles/atmega128a.elf.dir/build.make
 atmega128a.elf: CMakeFiles/atmega128a.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/user12/workspace_semicon/avr/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable atmega128a.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/user12/workspace_semicon/avr/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable atmega128a.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/atmega128a.elf.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Generating HEX file"
 	/home/user12/tools/avr8/bin/avr-objcopy -O ihex -R .eeprom atmega128a.elf /home/user12/workspace_semicon/avr/atmega128a/build/atmega128a.hex

@@ -7,10 +7,11 @@ Discarded input sections
 
  .data          0x0000000000000000        0x0 /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr51/crtatmega128a.o
  .bss           0x0000000000000000        0x0 /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr51/crtatmega128a.o
+ .text          0x0000000000000000        0x0 CMakeFiles/atmega128a.elf.dir/led.c.obj (symbol from plugin)
+ .text          0x0000000000000000        0x0 /tmp/cce3mL0H.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 /tmp/cce3mL0H.ltrans0.ltrans.o
+ .bss           0x0000000000000000        0x0 /tmp/cce3mL0H.ltrans0.ltrans.o
  .text          0x0000000000000000        0x0 CMakeFiles/atmega128a.elf.dir/main.c.obj (symbol from plugin)
- .text          0x0000000000000000        0x0 /tmp/ccyjKkqz.ltrans0.ltrans.o
- .data          0x0000000000000000        0x0 /tmp/ccyjKkqz.ltrans0.ltrans.o
- .bss           0x0000000000000000        0x0 /tmp/ccyjKkqz.ltrans0.ltrans.o
  .text          0x0000000000000000        0x0 /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/avr51/libgcc.a(_exit.o)
  .data          0x0000000000000000        0x0 /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/avr51/libgcc.a(_exit.o)
  .bss           0x0000000000000000        0x0 /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/avr51/libgcc.a(_exit.o)
@@ -45,8 +46,9 @@ Linker script and memory map
 Address of section .data set to 0x800100
 LOAD /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr51/crtatmega128a.o
 LOAD /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr51/libm.a
+LOAD CMakeFiles/atmega128a.elf.dir/led.c.obj
+LOAD /tmp/cce3mL0H.ltrans0.ltrans.o
 LOAD CMakeFiles/atmega128a.elf.dir/main.c.obj
-LOAD /tmp/ccyjKkqz.ltrans0.ltrans.o
 START GROUP
 LOAD /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/avr51/libgcc.a
 LOAD /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr51/libm.a
@@ -153,7 +155,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000       0xe2
+.text           0x0000000000000000      0x102
  *(.vectors)
  .vectors       0x0000000000000000       0x8c /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr51/crtatmega128a.o
                 0x0000000000000000                __vectors
@@ -245,13 +247,13 @@ END GROUP
                 0x00000000000000a0                __vector_20
                 0x00000000000000a4                . = ALIGN (0x2)
  *(.text.*)
- .text.startup  0x00000000000000a4       0x3a /tmp/ccyjKkqz.ltrans0.ltrans.o
+ .text.startup  0x00000000000000a4       0x5a /tmp/cce3mL0H.ltrans0.ltrans.o
                 0x00000000000000a4                main
-                0x00000000000000de                . = ALIGN (0x2)
+                0x00000000000000fe                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000000000000de        0x0 /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/avr51/libgcc.a(_exit.o)
-                0x00000000000000de                exit
-                0x00000000000000de                _exit
+ .fini9         0x00000000000000fe        0x0 /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/avr51/libgcc.a(_exit.o)
+                0x00000000000000fe                exit
+                0x00000000000000fe                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -270,11 +272,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000000000000de        0x4 /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/avr51/libgcc.a(_exit.o)
+ .fini0         0x00000000000000fe        0x4 /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/avr51/libgcc.a(_exit.o)
  *(.fini0)
-                0x00000000000000e2                _etext = .
+                0x0000000000000102                _etext = .
 
-.data           0x0000000000800100        0x0 load address 0x00000000000000e2
+.data           0x0000000000800100        0x0 load address 0x0000000000000102
                 [!provide]                        PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -292,8 +294,8 @@ END GROUP
  *(.bss*)
  *(COMMON)
                 [!provide]                        PROVIDE (__bss_end, .)
-                0x00000000000000e2                __data_load_start = LOADADDR (.data)
-                0x00000000000000e2                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000000000000102                __data_load_start = LOADADDR (.data)
+                0x0000000000000102                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x0000000000800100        0x0
                 [!provide]                        PROVIDE (__noinit_start, .)
@@ -341,7 +343,7 @@ END GROUP
 
 .comment        0x0000000000000000       0x30
  *(.comment)
- .comment       0x0000000000000000       0x30 /tmp/ccyjKkqz.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x30 /tmp/cce3mL0H.ltrans0.ltrans.o
                                          0x31 (size before relaxing)
 
 .note.gnu.avr.deviceinfo
@@ -367,38 +369,38 @@ END GROUP
 .debug_aranges  0x0000000000000000       0x20
  *(.debug_aranges)
  .debug_aranges
-                0x0000000000000000       0x20 /tmp/ccyjKkqz.ltrans0.ltrans.o
+                0x0000000000000000       0x20 /tmp/cce3mL0H.ltrans0.ltrans.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000      0x85e
+.debug_info     0x0000000000000000      0x997
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000      0x780 /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr51/crtatmega128a.o
- .debug_info    0x0000000000000780       0xde /tmp/ccyjKkqz.ltrans0.ltrans.o
+ .debug_info    0x0000000000000780      0x217 /tmp/cce3mL0H.ltrans0.ltrans.o
 
-.debug_abbrev   0x0000000000000000      0x7ba
+.debug_abbrev   0x0000000000000000      0x849
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000      0x718 /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr51/crtatmega128a.o
- .debug_abbrev  0x0000000000000718       0xa2 /tmp/ccyjKkqz.ltrans0.ltrans.o
+ .debug_abbrev  0x0000000000000718      0x131 /tmp/cce3mL0H.ltrans0.ltrans.o
 
-.debug_line     0x0000000000000000      0x10a
+.debug_line     0x0000000000000000      0x137
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x0000000000000000       0x1a /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr51/crtatmega128a.o
- .debug_line    0x000000000000001a       0xf0 /tmp/ccyjKkqz.ltrans0.ltrans.o
+ .debug_line    0x000000000000001a      0x11d /tmp/cce3mL0H.ltrans0.ltrans.o
 
 .debug_frame    0x0000000000000000       0x24
  *(.debug_frame)
- .debug_frame   0x0000000000000000       0x24 /tmp/ccyjKkqz.ltrans0.ltrans.o
+ .debug_frame   0x0000000000000000       0x24 /tmp/cce3mL0H.ltrans0.ltrans.o
 
-.debug_str      0x0000000000000000      0x3c6
+.debug_str      0x0000000000000000      0x3ea
  *(.debug_str)
  .debug_str     0x0000000000000000      0x27d /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr51/crtatmega128a.o
- .debug_str     0x000000000000027d      0x149 /tmp/ccyjKkqz.ltrans0.ltrans.o
+ .debug_str     0x000000000000027d      0x16d /tmp/cce3mL0H.ltrans0.ltrans.o
 
-.debug_loc      0x0000000000000000       0x7f
+.debug_loc      0x0000000000000000      0x10f
  *(.debug_loc)
- .debug_loc     0x0000000000000000       0x7f /tmp/ccyjKkqz.ltrans0.ltrans.o
+ .debug_loc     0x0000000000000000      0x10f /tmp/cce3mL0H.ltrans0.ltrans.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -418,9 +420,9 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x0000000000000000       0x28
+.debug_ranges   0x0000000000000000       0x40
  *(.debug_ranges)
- .debug_ranges  0x0000000000000000       0x28 /tmp/ccyjKkqz.ltrans0.ltrans.o
+ .debug_ranges  0x0000000000000000       0x40 /tmp/cce3mL0H.ltrans0.ltrans.o
 
 .debug_macro
  *(.debug_macro)
@@ -479,6 +481,12 @@ __vectors                                         /home/user12/tools/avr8/bin/..
 _exit                                             /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/avr51/libgcc.a(_exit.o)
 exit                                              /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/avr51/libgcc.a(_exit.o)
                                                   /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr51/crtatmega128a.o
-main                                              /tmp/ccyjKkqz.ltrans0.ltrans.o
+ledInit                                           CMakeFiles/atmega128a.elf.dir/led.c.obj (symbol from plugin)
+                                                  CMakeFiles/atmega128a.elf.dir/main.c.obj (symbol from plugin)
+ledOff                                            CMakeFiles/atmega128a.elf.dir/led.c.obj (symbol from plugin)
+                                                  CMakeFiles/atmega128a.elf.dir/main.c.obj (symbol from plugin)
+ledOn                                             CMakeFiles/atmega128a.elf.dir/led.c.obj (symbol from plugin)
+                                                  CMakeFiles/atmega128a.elf.dir/main.c.obj (symbol from plugin)
+main                                              /tmp/cce3mL0H.ltrans0.ltrans.o
                                                   CMakeFiles/atmega128a.elf.dir/main.c.obj (symbol from plugin)
                                                   /home/user12/tools/avr8/bin/../lib/gcc/avr/7.3.0/../../../../avr/lib/avr51/crtatmega128a.o

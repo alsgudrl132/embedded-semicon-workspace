@@ -11,7 +11,10 @@
 		],
 		"cmake.generator": "Unix Makefiles",
 		"files.associations": {
-			"io.h": "c"
+			"io.h": "c",
+			"delay.h": "c",
+			"led.h": "c",
+			"stdio.h": "c"
 		}
 	}
 }

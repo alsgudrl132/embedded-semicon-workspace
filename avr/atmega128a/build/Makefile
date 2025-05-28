@@ -130,6 +130,30 @@ atmega128a.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/build
 .PHONY : atmega128a.elf/fast
 
+led.obj: led.c.obj
+.PHONY : led.obj
+
+# target to build an object file
+led.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/led.c.obj
+.PHONY : led.c.obj
+
+led.i: led.c.i
+.PHONY : led.i
+
+# target to preprocess a source file
+led.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/led.c.i
+.PHONY : led.c.i
+
+led.s: led.c.s
+.PHONY : led.s
+
+# target to generate assembly for a file
+led.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/led.c.s
+.PHONY : led.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -163,6 +187,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... atmega128a.elf"
+	@echo "... led.obj"
+	@echo "... led.i"
+	@echo "... led.s"
 	@echo "... main.obj"
 	@echo "... main.i"
 	@echo "... main.s"

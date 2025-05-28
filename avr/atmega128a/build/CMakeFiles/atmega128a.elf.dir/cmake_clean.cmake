@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/atmega128a.elf.dir/led.c.obj"
+  "CMakeFiles/atmega128a.elf.dir/led.c.obj.d"
   "CMakeFiles/atmega128a.elf.dir/main.c.obj"
   "CMakeFiles/atmega128a.elf.dir/main.c.obj.d"
   "atmega128a.elf"
