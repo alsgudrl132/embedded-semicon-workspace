@@ -18,3 +18,5 @@ typedef struct {
 void ledInit(LED *led);
 void ledOn(LED *led);
 void ledOff(LED *led);
+void ledLeftShift(LED led);
+void ledRightShift(LED led);

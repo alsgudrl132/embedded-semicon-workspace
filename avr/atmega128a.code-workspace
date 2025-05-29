@@ -14,7 +14,8 @@
 			"io.h": "c",
 			"delay.h": "c",
 			"led.h": "c",
-			"stdio.h": "c"
+			"stdio.h": "c",
+			"stdint.h": "c"
 		}
 	}
 }

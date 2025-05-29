@@ -30,3 +30,34 @@ void ledOff(LED *led) {
     // 해당 핀 (내가 원하는 자리)을 LOW로 설정해서 LED OFF
     *(led->port) &= ~(1 << led->pinNumber);
 }
+void ledRightShift(LED led) {
+    for(uint8_t i = 0; i < 8; i++) {
+        led.pinNumber = i;
+        ledInit(&led);
+        ledOn(&led);
+        _delay_ms(200);
+    }
+
+    for(uint8_t i = 0; i < 8; i++) {
+        led.pinNumber = i;
+        ledInit(&led);
+        ledOff(&led);
+        _delay_ms(200);
+    }
+}
+
+void ledLeftShift(LED led) {
+    for(int8_t i = 7; i >= 0; i--) {
+        led.pinNumber = i;
+        ledInit(&led);
+        ledOn(&led);
+        _delay_ms(200);
+    }
+
+    for(int8_t i = 7; i >= 0; i--) {
+        led.pinNumber = i;
+        ledInit(&led);
+        ledOff(&led);
+        _delay_ms(200);
+    }
+}
