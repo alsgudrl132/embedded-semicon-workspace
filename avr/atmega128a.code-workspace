@@ -15,7 +15,9 @@
 			"delay.h": "c",
 			"led.h": "c",
 			"stdio.h": "c",
-			"stdint.h": "c"
+			"stdint.h": "c",
+			"ap.h": "c",
+			"button.h": "c"
 		}
 	}
 }

@@ -4,7 +4,7 @@
 # compile C with /home/user12/tools/avr8/bin/avr-gcc
 C_DEFINES = -DF_CPU=16000000UL
 
-C_INCLUDES = -I/home/user12/workspace_semicon/avr/atmega128a/src -I/home/user12/workspace_semicon/avr/atmega128a/src/ap -I/home/user12/workspace_semicon/avr/atmega128a/src/bsp -I/home/user12/workspace_semicon/avr/atmega128a/src/hw -I/home/user12/workspace_semicon/avr/atmega128a/src/common -I/home/user12/workspace_semicon/avr/atmega128a/src/common/hw/include
+C_INCLUDES = -I/home/user12/workspace_semicon/avr/atmega128a/src -I/home/user12/workspace_semicon/avr/atmega128a/src/ap -I/home/user12/workspace_semicon/avr/atmega128a/src/bsp -I/home/user12/workspace_semicon/avr/atmega128a/src/hw -I/home/user12/workspace_semicon/avr/atmega128a/src/driver -I/home/user12/workspace_semicon/avr/atmega128a/src/common -I/home/user12/workspace_semicon/avr/atmega128a/src/common/hw/include
 
 C_FLAGS = -mmcu=atmega128a -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3
 

@@ -1,7 +1,4 @@
-#include <stdint.h>
-#include <avr/io.h>
-#include <util/delay.h>
-#include <stdio.h>
+#include "../common/def.h"
 
 #define LED_DDR DDRD
 #define LED_PORT PORTD

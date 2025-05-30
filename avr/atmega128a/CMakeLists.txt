@@ -34,6 +34,7 @@ target_include_directories(${EXECUTABLE} PRIVATE
   src/ap
   src/bsp
   src/hw
+  src/driver
   src/common
   src/common/hw/include
 )
