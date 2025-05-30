@@ -12,8 +12,11 @@ typedef struct {
     uint8_t          pinNumber;
 } LED;
 
-void ledInit(LED *led);
-void ledOn(LED *led);
+// void ledInit(LED *led);
+// void ledOn(LED *led);
+
+void ledInit();
+void ledOn();
 void ledOff(LED *led);
 void ledLeftShift(LED led);
 void ledRightShift(LED led);

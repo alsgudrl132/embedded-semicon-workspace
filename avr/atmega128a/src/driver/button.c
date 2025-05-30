@@ -1,8 +1,5 @@
 #include "button.h"
 
-
-
-
 void buttonInit(BUTTON *button, volatile uint8_t *ddr, volatile uint8_t *pin, uint8_t pinNumber)
 {
     button->ddr = ddr;
