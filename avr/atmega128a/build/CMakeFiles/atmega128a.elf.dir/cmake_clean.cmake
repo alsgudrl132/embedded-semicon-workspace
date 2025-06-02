@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/atmega128a.elf.dir/main.c.obj.d"
   "CMakeFiles/atmega128a.elf.dir/src/ap/ap.c.obj"
   "CMakeFiles/atmega128a.elf.dir/src/ap/ap.c.obj.d"
+  "CMakeFiles/atmega128a.elf.dir/src/ap/ap_led.c.obj"
+  "CMakeFiles/atmega128a.elf.dir/src/ap/ap_led.c.obj.d"
   "CMakeFiles/atmega128a.elf.dir/src/driver/button.c.obj"
   "CMakeFiles/atmega128a.elf.dir/src/driver/button.c.obj.d"
   "CMakeFiles/atmega128a.elf.dir/src/driver/led.c.obj"

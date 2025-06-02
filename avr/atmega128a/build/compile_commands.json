@@ -13,6 +13,12 @@
 },
 {
   "directory": "/home/user12/workspace_semicon/avr/atmega128a/build",
+  "command": "/home/user12/tools/avr8/bin/avr-gcc -DF_CPU=16000000UL -I/home/user12/workspace_semicon/avr/atmega128a/src -I/home/user12/workspace_semicon/avr/atmega128a/src/ap -I/home/user12/workspace_semicon/avr/atmega128a/src/bsp -I/home/user12/workspace_semicon/avr/atmega128a/src/hw -I/home/user12/workspace_semicon/avr/atmega128a/src/driver -I/home/user12/workspace_semicon/avr/atmega128a/src/common -I/home/user12/workspace_semicon/avr/atmega128a/src/common/hw/include -mmcu=atmega128a -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/ap/ap_led.c.obj -c /home/user12/workspace_semicon/avr/atmega128a/src/ap/ap_led.c",
+  "file": "/home/user12/workspace_semicon/avr/atmega128a/src/ap/ap_led.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/ap/ap_led.c.obj"
+},
+{
+  "directory": "/home/user12/workspace_semicon/avr/atmega128a/build",
   "command": "/home/user12/tools/avr8/bin/avr-gcc -DF_CPU=16000000UL -I/home/user12/workspace_semicon/avr/atmega128a/src -I/home/user12/workspace_semicon/avr/atmega128a/src/ap -I/home/user12/workspace_semicon/avr/atmega128a/src/bsp -I/home/user12/workspace_semicon/avr/atmega128a/src/hw -I/home/user12/workspace_semicon/avr/atmega128a/src/driver -I/home/user12/workspace_semicon/avr/atmega128a/src/common -I/home/user12/workspace_semicon/avr/atmega128a/src/common/hw/include -mmcu=atmega128a -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/button.c.obj -c /home/user12/workspace_semicon/avr/atmega128a/src/driver/button.c",
   "file": "/home/user12/workspace_semicon/avr/atmega128a/src/driver/button.c",
   "output": "CMakeFiles/atmega128a.elf.dir/src/driver/button.c.obj"
