@@ -81,21 +81,25 @@ void apInit()
 //     OCR0 = 150;
 // }
 
+// 모터가 빠른속도로 돌면 선풍기의 역할이 제대로 안되기때문에 천천히돌도록 OCR1A에 +5씩 주입
+// 중간에 멈출수있도록 인터럽트 사용
+// 멈춘지점부터 다시회전할수있도록 currentPwm 변수 추가
+
 #define ROTATION_ON 3
 #define ROTATION_OFF 4
 #define ROTATION_BUTTON_DDR DDRG
 #define ROTATION_BUTTON_PIN PING
 #define ROTATION_BUTTON_PORT PORTG
-#define ROTATION_MOTER_DDR DDRB
-#define ROTATION_MOTER_PORT PORTB
+#define ROTATION_MOTOR_DDR DDRB
+#define ROTATION_MOTOR_PORT PORTB
 
-volatile uint8_t isRotation = 1;
-volatile uint16_t currentRotate = 250;
-uint8_t directionUp = 1;
+volatile uint8_t isRunning = 1;
+volatile uint16_t currentPwm = 250;
+uint8_t directionUp = 1;    // 1이면 증가하는중 0이면 감소하는중
 
 ISR(INT5_vect)
 {
-    isRotation = 0;
+    isRunning = 0;
 }
 
 void apMain()
@@ -105,53 +109,54 @@ void apMain()
     // 인터럽트 설정
     EICRB |= (1 << ISC51); EICRB &= ~(1 << ISC50);
     EICRB |= (1 << ISC41); EICRB &= ~(1 << ISC40);
-    EIMSK |= (1 << INT5) | (1 << INT4);
+    EIMSK |= (1 << INT5);
 
     // 버튼 입력 설정 (풀업)
     ROTATION_BUTTON_DDR &= ~((1 << ROTATION_ON) | (1 << ROTATION_OFF));
     ROTATION_BUTTON_PORT |= ((1 << ROTATION_ON) | (1 << ROTATION_OFF));
 
     // PWM 출력 설정
-    ROTATION_MOTER_DDR |= (1 << PB5);
+    ROTATION_MOTOR_DDR |= (1 << PB5);
     TCCR1A |= (1 << COM1A1) | (1 << WGM11);
     TCCR1B |= (1 << WGM13) | (1 << WGM12) | (1 << CS11) | (1 << CS10);
     ICR1 = 4999;
 
-    OCR1A = currentRotate; // 시작 시 PWM 설정
+    OCR1A = currentPwm; // 시작 시 PWM 설정
 
     while (1)
     {
         // 시작 버튼 눌림
         if (!(ROTATION_BUTTON_PIN & (1 << ROTATION_ON)))
         {
-            isRotation = 1;
+            isRunning = 1;
         }
 
         // 회전 상태
-        if (isRotation)
+        if (isRunning)
         {
             if (directionUp)
             {
-                currentRotate += 5;
-                if (currentRotate >= 500)
+                currentPwm += 5;
+                if (currentPwm >= 500)
                 {
-                    currentRotate = 500;
+                    currentPwm = 500;
                     directionUp = 0;
                 }
             }
             else
             {
-                currentRotate -= 5;
-                if (currentRotate <= 250)
+                currentPwm -= 5;
+                if (currentPwm <= 250)
                 {
-                    currentRotate = 250;
+                    currentPwm = 250;
                     directionUp = 1;
                 }
             }
 
-            OCR1A = currentRotate;
+            OCR1A = currentPwm;
             _delay_ms(70);
         }
+        // 정지 버튼 눌림
         else
         {
             OCR1A = 0; // PWM 정지
