@@ -11,7 +11,8 @@ CMakeFiles/atmega128a.elf.dir/src/ap/ap.c.obj: /home/user12/workspace_semicon/av
   /home/user12/workspace_semicon/avr/atmega128a/src/common/def.h \
   /home/user12/workspace_semicon/avr/atmega128a/src/driver/button.h \
   /home/user12/workspace_semicon/avr/atmega128a/src/driver/led.h \
-  /home/user12/workspace_semicon/avr/atmega128a/src/ap/ap.h
+  /home/user12/workspace_semicon/avr/atmega128a/src/ap/ap.h \
+  /home/user12/workspace_semicon/avr/atmega128a/src/driver/main_motor.h
 
 CMakeFiles/atmega128a.elf.dir/src/ap/ap_led.c.obj: /home/user12/workspace_semicon/avr/atmega128a/src/ap/ap_led.c
 
@@ -23,6 +24,22 @@ CMakeFiles/atmega128a.elf.dir/src/driver/led.c.obj: /home/user12/workspace_semic
   /home/user12/workspace_semicon/avr/atmega128a/src/common/def.h \
   /home/user12/workspace_semicon/avr/atmega128a/src/driver/led.h
 
+CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj: /home/user12/workspace_semicon/avr/atmega128a/src/driver/main_motor.c \
+  /home/user12/workspace_semicon/avr/atmega128a/src/common/def.h \
+  /home/user12/workspace_semicon/avr/atmega128a/src/driver/button.h \
+  /home/user12/workspace_semicon/avr/atmega128a/src/driver/led.h \
+  /home/user12/workspace_semicon/avr/atmega128a/src/ap/ap.h \
+  /home/user12/workspace_semicon/avr/atmega128a/src/driver/main_motor.h
+
+CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.obj: /home/user12/workspace_semicon/avr/atmega128a/src/driver/sub_motor.c \
+  /home/user12/workspace_semicon/avr/atmega128a/src/common/def.h \
+  /home/user12/workspace_semicon/avr/atmega128a/src/driver/button.h \
+  /home/user12/workspace_semicon/avr/atmega128a/src/driver/led.h \
+  /home/user12/workspace_semicon/avr/atmega128a/src/ap/ap.h \
+  /home/user12/workspace_semicon/avr/atmega128a/src/driver/sub_motor.h
+
+
+/home/user12/workspace_semicon/avr/atmega128a/src/driver/sub_motor.h:
 
 /home/user12/workspace_semicon/avr/atmega128a/src/driver/led.c:
 
@@ -30,9 +47,15 @@ CMakeFiles/atmega128a.elf.dir/src/driver/led.c.obj: /home/user12/workspace_semic
 
 /home/user12/workspace_semicon/avr/atmega128a/src/ap/ap_led.c:
 
+/home/user12/workspace_semicon/avr/atmega128a/src/driver/main_motor.c:
+
+/home/user12/workspace_semicon/avr/atmega128a/src/driver/main_motor.h:
+
 /home/user12/workspace_semicon/avr/atmega128a/src/ap/ap.h:
 
 /home/user12/workspace_semicon/avr/atmega128a/src/driver/led.h:
+
+/home/user12/workspace_semicon/avr/atmega128a/src/driver/sub_motor.c:
 
 /home/user12/workspace_semicon/avr/atmega128a/src/driver/button.h:
 

@@ -17,7 +17,8 @@
 			"stdio.h": "c",
 			"stdint.h": "c",
 			"ap.h": "c",
-			"button.h": "c"
+			"button.h": "c",
+			"sub_motor.h": "c"
 		}
 	}
 }

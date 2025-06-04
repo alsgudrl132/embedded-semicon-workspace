@@ -250,6 +250,54 @@ src/driver/led.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/led.c.s
 .PHONY : src/driver/led.c.s
 
+src/driver/main_motor.obj: src/driver/main_motor.c.obj
+.PHONY : src/driver/main_motor.obj
+
+# target to build an object file
+src/driver/main_motor.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj
+.PHONY : src/driver/main_motor.c.obj
+
+src/driver/main_motor.i: src/driver/main_motor.c.i
+.PHONY : src/driver/main_motor.i
+
+# target to preprocess a source file
+src/driver/main_motor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.i
+.PHONY : src/driver/main_motor.c.i
+
+src/driver/main_motor.s: src/driver/main_motor.c.s
+.PHONY : src/driver/main_motor.s
+
+# target to generate assembly for a file
+src/driver/main_motor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.s
+.PHONY : src/driver/main_motor.c.s
+
+src/driver/sub_motor.obj: src/driver/sub_motor.c.obj
+.PHONY : src/driver/sub_motor.obj
+
+# target to build an object file
+src/driver/sub_motor.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.obj
+.PHONY : src/driver/sub_motor.c.obj
+
+src/driver/sub_motor.i: src/driver/sub_motor.c.i
+.PHONY : src/driver/sub_motor.i
+
+# target to preprocess a source file
+src/driver/sub_motor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.i
+.PHONY : src/driver/sub_motor.c.i
+
+src/driver/sub_motor.s: src/driver/sub_motor.c.s
+.PHONY : src/driver/sub_motor.s
+
+# target to generate assembly for a file
+src/driver/sub_motor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.s
+.PHONY : src/driver/sub_motor.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -274,6 +322,12 @@ help:
 	@echo "... src/driver/led.obj"
 	@echo "... src/driver/led.i"
 	@echo "... src/driver/led.s"
+	@echo "... src/driver/main_motor.obj"
+	@echo "... src/driver/main_motor.i"
+	@echo "... src/driver/main_motor.s"
+	@echo "... src/driver/sub_motor.obj"
+	@echo "... src/driver/sub_motor.i"
+	@echo "... src/driver/sub_motor.s"
 .PHONY : help
 
 

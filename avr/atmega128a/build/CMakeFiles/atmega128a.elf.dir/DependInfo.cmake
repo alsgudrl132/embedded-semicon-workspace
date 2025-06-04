@@ -13,6 +13,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/user12/workspace_semicon/avr/atmega128a/src/ap/ap_led.c" "CMakeFiles/atmega128a.elf.dir/src/ap/ap_led.c.obj" "gcc" "CMakeFiles/atmega128a.elf.dir/src/ap/ap_led.c.obj.d"
   "/home/user12/workspace_semicon/avr/atmega128a/src/driver/button.c" "CMakeFiles/atmega128a.elf.dir/src/driver/button.c.obj" "gcc" "CMakeFiles/atmega128a.elf.dir/src/driver/button.c.obj.d"
   "/home/user12/workspace_semicon/avr/atmega128a/src/driver/led.c" "CMakeFiles/atmega128a.elf.dir/src/driver/led.c.obj" "gcc" "CMakeFiles/atmega128a.elf.dir/src/driver/led.c.obj.d"
+  "/home/user12/workspace_semicon/avr/atmega128a/src/driver/main_motor.c" "CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj" "gcc" "CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj.d"
+  "/home/user12/workspace_semicon/avr/atmega128a/src/driver/sub_motor.c" "CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.obj" "gcc" "CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
