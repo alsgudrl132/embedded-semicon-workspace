@@ -10,4 +10,4 @@ CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.obj: \
  /home/psh/workspace_semicon/avr/atmega128a/src/driver/../ap/../driver/myled.h \
  /home/psh/workspace_semicon/avr/atmega128a/src/driver/../ap/../driver/lcd.h \
  /home/psh/workspace_semicon/avr/atmega128a/src/driver/../ap/../driver/../common/def.h \
- /home/psh/workspace_semicon/avr/atmega128a/src/driver/../ap/../driver/uart0.h
+ /home/psh/workspace_semicon/avr/atmega128a/src/driver/../ap/../driver/uart0_int.h

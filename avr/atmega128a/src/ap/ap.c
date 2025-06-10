@@ -18,10 +18,22 @@ void apMain()
     //     _delay_ms(100);
     // }
 
+    extern FILE OUTPUT;
+    extern uint8_t rxFlag;
+    extern char rxBuff[100];
+
     UART0_Init();
+    stdout = &OUTPUT;
+    
+    sei();
+
     while (1)
     {
-        UART0_Transmit(UART0_Receive());
+        if(rxFlag == 1)     // 문자열 수신이 완료된 경우
+        {
+            rxFlag = 0;     // 문자열 수신 플래그 초기화
+            printf(rxBuff); // 수신된 문자열 출력
+        }    
     }
     
 }

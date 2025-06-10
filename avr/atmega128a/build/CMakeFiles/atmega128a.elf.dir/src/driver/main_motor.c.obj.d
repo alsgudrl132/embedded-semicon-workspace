@@ -9,4 +9,4 @@ CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj: \
  /home/psh/workspace_semicon/avr/atmega128a/src/driver/../ap/../driver/sub_motor.h \
  /home/psh/workspace_semicon/avr/atmega128a/src/driver/../ap/../driver/myled.h \
  /home/psh/workspace_semicon/avr/atmega128a/src/driver/../ap/../driver/lcd.h \
- /home/psh/workspace_semicon/avr/atmega128a/src/driver/../ap/../driver/uart0.h
+ /home/psh/workspace_semicon/avr/atmega128a/src/driver/../ap/../driver/uart0_int.h

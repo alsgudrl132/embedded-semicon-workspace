@@ -9,7 +9,7 @@ CMakeFiles/atmega128a.elf.dir/main.c.obj: /home/psh/workspace_semicon/avr/atmega
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/main_motor.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/myled.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/sub_motor.h \
-  /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0.h \
+  /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0_int.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/ap/ap.h
 
 CMakeFiles/atmega128a.elf.dir/src/ap/ap.c.obj: /home/psh/workspace_semicon/avr/atmega128a/src/ap/ap.c \
@@ -20,7 +20,7 @@ CMakeFiles/atmega128a.elf.dir/src/ap/ap.c.obj: /home/psh/workspace_semicon/avr/a
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/main_motor.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/myled.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/sub_motor.h \
-  /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0.h \
+  /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0_int.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/ap/ap.h
 
 CMakeFiles/atmega128a.elf.dir/src/driver/lcd.c.obj: /home/psh/workspace_semicon/avr/atmega128a/src/driver/lcd.c \
@@ -35,7 +35,7 @@ CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.obj: /home/psh/workspace_semicon
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/main_motor.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/myled.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/sub_motor.h \
-  /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0.h \
+  /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0_int.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/ap/ap.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/common/def.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/led8.h
@@ -48,7 +48,7 @@ CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj: /home/psh/workspace_s
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/main_motor.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/myled.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/sub_motor.h \
-  /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0.h \
+  /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0_int.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/ap/ap.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/main_motor.h
 
@@ -63,7 +63,7 @@ CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.obj: /home/psh/workspace_se
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/main_motor.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/myled.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/sub_motor.h \
-  /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0.h \
+  /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0_int.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/ap/ap.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/sub_motor.h
 
@@ -71,35 +71,43 @@ CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.obj: /home/psh/workspace_semico
   /home/psh/workspace_semicon/avr/atmega128a/src/common/def.h \
   /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0.h
 
+CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj: /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0_int.c \
+  /home/psh/workspace_semicon/avr/atmega128a/src/common/def.h \
+  /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0_int.h
 
-/home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0.c:
 
-/home/psh/workspace_semicon/avr/atmega128a/src/driver/main_motor.c:
-
-/home/psh/workspace_semicon/avr/atmega128a/src/driver/lcd.c:
-
-/home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0.h:
-
-/home/psh/workspace_semicon/avr/atmega128a/src/driver/sub_motor.h:
-
-/home/psh/workspace_semicon/avr/atmega128a/src/ap/ap.c:
-
-/home/psh/workspace_semicon/avr/atmega128a/src/driver/myled.h:
-
-/home/psh/workspace_semicon/avr/atmega128a/src/driver/myled.c:
-
-/home/psh/workspace_semicon/avr/atmega128a/src/ap/ap.h:
-
-/home/psh/workspace_semicon/avr/atmega128a/main.c:
-
-/home/psh/workspace_semicon/avr/atmega128a/src/driver/led8.c:
-
-/home/psh/workspace_semicon/avr/atmega128a/src/driver/lcd.h:
-
-/home/psh/workspace_semicon/avr/atmega128a/src/driver/sub_motor.c:
-
-/home/psh/workspace_semicon/avr/atmega128a/src/driver/main_motor.h:
+/home/psh/workspace_semicon/avr/atmega128a/src/driver/led8.h:
 
 /home/psh/workspace_semicon/avr/atmega128a/src/common/def.h:
 
-/home/psh/workspace_semicon/avr/atmega128a/src/driver/led8.h:
+/home/psh/workspace_semicon/avr/atmega128a/src/driver/main_motor.h:
+
+/home/psh/workspace_semicon/avr/atmega128a/src/driver/sub_motor.c:
+
+/home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0.h:
+
+/home/psh/workspace_semicon/avr/atmega128a/src/driver/lcd.h:
+
+/home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0_int.c:
+
+/home/psh/workspace_semicon/avr/atmega128a/src/driver/led8.c:
+
+/home/psh/workspace_semicon/avr/atmega128a/main.c:
+
+/home/psh/workspace_semicon/avr/atmega128a/src/driver/myled.c:
+
+/home/psh/workspace_semicon/avr/atmega128a/src/driver/myled.h:
+
+/home/psh/workspace_semicon/avr/atmega128a/src/ap/ap.c:
+
+/home/psh/workspace_semicon/avr/atmega128a/src/driver/sub_motor.h:
+
+/home/psh/workspace_semicon/avr/atmega128a/src/ap/ap.h:
+
+/home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0_int.h:
+
+/home/psh/workspace_semicon/avr/atmega128a/src/driver/lcd.c:
+
+/home/psh/workspace_semicon/avr/atmega128a/src/driver/main_motor.c:
+
+/home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0.c:

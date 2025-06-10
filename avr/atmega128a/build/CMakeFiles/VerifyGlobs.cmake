@@ -31,6 +31,7 @@ set(OLD_GLOB
   "/home/psh/workspace_semicon/avr/atmega128a/src/driver/myled.c"
   "/home/psh/workspace_semicon/avr/atmega128a/src/driver/sub_motor.c"
   "/home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0.c"
+  "/home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0_int.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

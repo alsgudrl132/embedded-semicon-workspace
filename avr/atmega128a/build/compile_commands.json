@@ -46,5 +46,11 @@
   "command": "/home/psh/tools/avr8/bin/avr-gcc -DF_CPU=16000000UL -I/home/psh/workspace_semicon/avr/atmega128a/src -I/home/psh/workspace_semicon/avr/atmega128a/src/ap -I/home/psh/workspace_semicon/avr/atmega128a/src/bsp -I/home/psh/workspace_semicon/avr/atmega128a/src/hw -I/home/psh/workspace_semicon/avr/atmega128a/src/common -I/home/psh/workspace_semicon/avr/atmega128a/src/common/hw/include -mmcu=atmega128a -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.obj -c /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0.c",
   "file": "/home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0.c",
   "output": "CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.obj"
+},
+{
+  "directory": "/home/psh/workspace_semicon/avr/atmega128a/build",
+  "command": "/home/psh/tools/avr8/bin/avr-gcc -DF_CPU=16000000UL -I/home/psh/workspace_semicon/avr/atmega128a/src -I/home/psh/workspace_semicon/avr/atmega128a/src/ap -I/home/psh/workspace_semicon/avr/atmega128a/src/bsp -I/home/psh/workspace_semicon/avr/atmega128a/src/hw -I/home/psh/workspace_semicon/avr/atmega128a/src/common -I/home/psh/workspace_semicon/avr/atmega128a/src/common/hw/include -mmcu=atmega128a -g -std=gnu11 -fdata-sections -ffunction-sections -MMD -flto -fno-fat-lto-objects -Wall -Os -g3 -o CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj -c /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0_int.c",
+  "file": "/home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0_int.c",
+  "output": "CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj"
 }
 ]
