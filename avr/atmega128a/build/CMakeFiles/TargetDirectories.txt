@@ -1,0 +1,3 @@
+/home/psh/workspace_semicon/avr/atmega128a/build/CMakeFiles/atmega128a.elf.dir
+/home/psh/workspace_semicon/avr/atmega128a/build/CMakeFiles/edit_cache.dir
+/home/psh/workspace_semicon/avr/atmega128a/build/CMakeFiles/rebuild_cache.dir
