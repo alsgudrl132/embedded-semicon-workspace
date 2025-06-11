@@ -147,11 +147,7 @@
 				1,
 				2,
 				3,
-				4,
-				5,
-				6,
-				7,
-				8
+				4
 			]
 		}
 	],
@@ -223,11 +219,7 @@
 				1,
 				2,
 				3,
-				4,
-				5,
-				6,
-				7,
-				8
+				4
 			]
 		}
 	],
@@ -249,30 +241,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/driver/lcd.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/driver/led8.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/driver/main_motor.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/driver/myled.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/driver/sub_motor.c",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -11,10 +11,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/psh/workspace_semicon/avr/atmega128a/main.c" "CMakeFiles/atmega128a.elf.dir/main.c.obj" "gcc" "CMakeFiles/atmega128a.elf.dir/main.c.obj.d"
   "/home/psh/workspace_semicon/avr/atmega128a/src/ap/ap.c" "CMakeFiles/atmega128a.elf.dir/src/ap/ap.c.obj" "gcc" "CMakeFiles/atmega128a.elf.dir/src/ap/ap.c.obj.d"
   "/home/psh/workspace_semicon/avr/atmega128a/src/driver/lcd.c" "CMakeFiles/atmega128a.elf.dir/src/driver/lcd.c.obj" "gcc" "CMakeFiles/atmega128a.elf.dir/src/driver/lcd.c.obj.d"
-  "/home/psh/workspace_semicon/avr/atmega128a/src/driver/led8.c" "CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.obj" "gcc" "CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.obj.d"
-  "/home/psh/workspace_semicon/avr/atmega128a/src/driver/main_motor.c" "CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj" "gcc" "CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj.d"
-  "/home/psh/workspace_semicon/avr/atmega128a/src/driver/myled.c" "CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.obj" "gcc" "CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.obj.d"
-  "/home/psh/workspace_semicon/avr/atmega128a/src/driver/sub_motor.c" "CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.obj" "gcc" "CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.obj.d"
   "/home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0.c" "CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.obj" "gcc" "CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.obj.d"
   "/home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0_int.c" "CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj" "gcc" "CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj.d"
   )

@@ -26,10 +26,6 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/psh/workspace_semicon/a
 set(OLD_GLOB
   "/home/psh/workspace_semicon/avr/atmega128a/src/ap/ap.c"
   "/home/psh/workspace_semicon/avr/atmega128a/src/driver/lcd.c"
-  "/home/psh/workspace_semicon/avr/atmega128a/src/driver/led8.c"
-  "/home/psh/workspace_semicon/avr/atmega128a/src/driver/main_motor.c"
-  "/home/psh/workspace_semicon/avr/atmega128a/src/driver/myled.c"
-  "/home/psh/workspace_semicon/avr/atmega128a/src/driver/sub_motor.c"
   "/home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0.c"
   "/home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0_int.c"
   )

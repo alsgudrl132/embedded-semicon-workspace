@@ -3,14 +3,14 @@
 
 #include "../common/def.h"
 
+void UART_Init();
+void UART_Transmit(char data);
+//int UART_Transmit_Char(char data, FILE *stream);
+unsigned char UART_Receive();
 
 
-void UART0_Init();
-void UART0_Transmit(unsigned char data);
-unsigned char UART0_Receive();
+extern FILE OUTPUT;
+extern char rxBuff[100];
+extern volatile uint8_t rxFlag;
 
-
-
-
-
-#endif /* __UART0_INT_H__*/
+#endif /* __UART0_INT_H__ */

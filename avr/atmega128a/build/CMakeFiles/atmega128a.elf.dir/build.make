@@ -111,66 +111,10 @@ CMakeFiles/atmega128a.elf.dir/src/driver/lcd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/atmega128a.elf.dir/src/driver/lcd.c.s"
 	/home/psh/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/psh/workspace_semicon/avr/atmega128a/src/driver/lcd.c -o CMakeFiles/atmega128a.elf.dir/src/driver/lcd.c.s
 
-CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.obj: CMakeFiles/atmega128a.elf.dir/flags.make
-CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.obj: /home/psh/workspace_semicon/avr/atmega128a/src/driver/led8.c
-CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.obj: CMakeFiles/atmega128a.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/psh/workspace_semicon/avr/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.obj"
-	/home/psh/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.obj -MF CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.obj.d -o CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.obj -c /home/psh/workspace_semicon/avr/atmega128a/src/driver/led8.c
-
-CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.i"
-	/home/psh/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/psh/workspace_semicon/avr/atmega128a/src/driver/led8.c > CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.i
-
-CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.s"
-	/home/psh/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/psh/workspace_semicon/avr/atmega128a/src/driver/led8.c -o CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.s
-
-CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj: CMakeFiles/atmega128a.elf.dir/flags.make
-CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj: /home/psh/workspace_semicon/avr/atmega128a/src/driver/main_motor.c
-CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj: CMakeFiles/atmega128a.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/psh/workspace_semicon/avr/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj"
-	/home/psh/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj -MF CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj.d -o CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj -c /home/psh/workspace_semicon/avr/atmega128a/src/driver/main_motor.c
-
-CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.i"
-	/home/psh/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/psh/workspace_semicon/avr/atmega128a/src/driver/main_motor.c > CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.i
-
-CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.s"
-	/home/psh/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/psh/workspace_semicon/avr/atmega128a/src/driver/main_motor.c -o CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.s
-
-CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.obj: CMakeFiles/atmega128a.elf.dir/flags.make
-CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.obj: /home/psh/workspace_semicon/avr/atmega128a/src/driver/myled.c
-CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.obj: CMakeFiles/atmega128a.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/psh/workspace_semicon/avr/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.obj"
-	/home/psh/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.obj -MF CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.obj.d -o CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.obj -c /home/psh/workspace_semicon/avr/atmega128a/src/driver/myled.c
-
-CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.i"
-	/home/psh/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/psh/workspace_semicon/avr/atmega128a/src/driver/myled.c > CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.i
-
-CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.s"
-	/home/psh/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/psh/workspace_semicon/avr/atmega128a/src/driver/myled.c -o CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.s
-
-CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.obj: CMakeFiles/atmega128a.elf.dir/flags.make
-CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.obj: /home/psh/workspace_semicon/avr/atmega128a/src/driver/sub_motor.c
-CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.obj: CMakeFiles/atmega128a.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/psh/workspace_semicon/avr/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.obj"
-	/home/psh/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.obj -MF CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.obj.d -o CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.obj -c /home/psh/workspace_semicon/avr/atmega128a/src/driver/sub_motor.c
-
-CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.i"
-	/home/psh/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/psh/workspace_semicon/avr/atmega128a/src/driver/sub_motor.c > CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.i
-
-CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.s"
-	/home/psh/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/psh/workspace_semicon/avr/atmega128a/src/driver/sub_motor.c -o CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.s
-
 CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.obj: CMakeFiles/atmega128a.elf.dir/flags.make
 CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.obj: /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0.c
 CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.obj: CMakeFiles/atmega128a.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/psh/workspace_semicon/avr/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/psh/workspace_semicon/avr/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.obj"
 	/home/psh/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.obj -MF CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.obj.d -o CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.obj -c /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0.c
 
 CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.i: cmake_force
@@ -184,7 +128,7 @@ CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.s: cmake_force
 CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj: CMakeFiles/atmega128a.elf.dir/flags.make
 CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj: /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0_int.c
 CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj: CMakeFiles/atmega128a.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/psh/workspace_semicon/avr/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/psh/workspace_semicon/avr/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj"
 	/home/psh/tools/avr8/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj -MF CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj.d -o CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj -c /home/psh/workspace_semicon/avr/atmega128a/src/driver/uart0_int.c
 
 CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.i: cmake_force
@@ -200,10 +144,6 @@ atmega128a_elf_OBJECTS = \
 "CMakeFiles/atmega128a.elf.dir/main.c.obj" \
 "CMakeFiles/atmega128a.elf.dir/src/ap/ap.c.obj" \
 "CMakeFiles/atmega128a.elf.dir/src/driver/lcd.c.obj" \
-"CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.obj" \
-"CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj" \
-"CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.obj" \
-"CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.obj" \
 "CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.obj" \
 "CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj"
 
@@ -213,15 +153,11 @@ atmega128a_elf_EXTERNAL_OBJECTS =
 atmega128a.elf: CMakeFiles/atmega128a.elf.dir/main.c.obj
 atmega128a.elf: CMakeFiles/atmega128a.elf.dir/src/ap/ap.c.obj
 atmega128a.elf: CMakeFiles/atmega128a.elf.dir/src/driver/lcd.c.obj
-atmega128a.elf: CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.obj
-atmega128a.elf: CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj
-atmega128a.elf: CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.obj
-atmega128a.elf: CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.obj
 atmega128a.elf: CMakeFiles/atmega128a.elf.dir/src/driver/uart0.c.obj
 atmega128a.elf: CMakeFiles/atmega128a.elf.dir/src/driver/uart0_int.c.obj
 atmega128a.elf: CMakeFiles/atmega128a.elf.dir/build.make
 atmega128a.elf: CMakeFiles/atmega128a.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/psh/workspace_semicon/avr/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable atmega128a.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/psh/workspace_semicon/avr/atmega128a/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable atmega128a.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/atmega128a.elf.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Generating HEX file"
 	/home/psh/tools/avr8/bin/avr-objcopy -O ihex -R .eeprom atmega128a.elf /home/psh/workspace_semicon/avr/atmega128a/build/atmega128a.hex

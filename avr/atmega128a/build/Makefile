@@ -202,102 +202,6 @@ src/driver/lcd.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/lcd.c.s
 .PHONY : src/driver/lcd.c.s
 
-src/driver/led8.obj: src/driver/led8.c.obj
-.PHONY : src/driver/led8.obj
-
-# target to build an object file
-src/driver/led8.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.obj
-.PHONY : src/driver/led8.c.obj
-
-src/driver/led8.i: src/driver/led8.c.i
-.PHONY : src/driver/led8.i
-
-# target to preprocess a source file
-src/driver/led8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.i
-.PHONY : src/driver/led8.c.i
-
-src/driver/led8.s: src/driver/led8.c.s
-.PHONY : src/driver/led8.s
-
-# target to generate assembly for a file
-src/driver/led8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/led8.c.s
-.PHONY : src/driver/led8.c.s
-
-src/driver/main_motor.obj: src/driver/main_motor.c.obj
-.PHONY : src/driver/main_motor.obj
-
-# target to build an object file
-src/driver/main_motor.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.obj
-.PHONY : src/driver/main_motor.c.obj
-
-src/driver/main_motor.i: src/driver/main_motor.c.i
-.PHONY : src/driver/main_motor.i
-
-# target to preprocess a source file
-src/driver/main_motor.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.i
-.PHONY : src/driver/main_motor.c.i
-
-src/driver/main_motor.s: src/driver/main_motor.c.s
-.PHONY : src/driver/main_motor.s
-
-# target to generate assembly for a file
-src/driver/main_motor.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/main_motor.c.s
-.PHONY : src/driver/main_motor.c.s
-
-src/driver/myled.obj: src/driver/myled.c.obj
-.PHONY : src/driver/myled.obj
-
-# target to build an object file
-src/driver/myled.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.obj
-.PHONY : src/driver/myled.c.obj
-
-src/driver/myled.i: src/driver/myled.c.i
-.PHONY : src/driver/myled.i
-
-# target to preprocess a source file
-src/driver/myled.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.i
-.PHONY : src/driver/myled.c.i
-
-src/driver/myled.s: src/driver/myled.c.s
-.PHONY : src/driver/myled.s
-
-# target to generate assembly for a file
-src/driver/myled.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/myled.c.s
-.PHONY : src/driver/myled.c.s
-
-src/driver/sub_motor.obj: src/driver/sub_motor.c.obj
-.PHONY : src/driver/sub_motor.obj
-
-# target to build an object file
-src/driver/sub_motor.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.obj
-.PHONY : src/driver/sub_motor.c.obj
-
-src/driver/sub_motor.i: src/driver/sub_motor.c.i
-.PHONY : src/driver/sub_motor.i
-
-# target to preprocess a source file
-src/driver/sub_motor.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.i
-.PHONY : src/driver/sub_motor.c.i
-
-src/driver/sub_motor.s: src/driver/sub_motor.c.s
-.PHONY : src/driver/sub_motor.s
-
-# target to generate assembly for a file
-src/driver/sub_motor.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atmega128a.elf.dir/build.make CMakeFiles/atmega128a.elf.dir/src/driver/sub_motor.c.s
-.PHONY : src/driver/sub_motor.c.s
-
 src/driver/uart0.obj: src/driver/uart0.c.obj
 .PHONY : src/driver/uart0.obj
 
@@ -364,18 +268,6 @@ help:
 	@echo "... src/driver/lcd.obj"
 	@echo "... src/driver/lcd.i"
 	@echo "... src/driver/lcd.s"
-	@echo "... src/driver/led8.obj"
-	@echo "... src/driver/led8.i"
-	@echo "... src/driver/led8.s"
-	@echo "... src/driver/main_motor.obj"
-	@echo "... src/driver/main_motor.i"
-	@echo "... src/driver/main_motor.s"
-	@echo "... src/driver/myled.obj"
-	@echo "... src/driver/myled.i"
-	@echo "... src/driver/myled.s"
-	@echo "... src/driver/sub_motor.obj"
-	@echo "... src/driver/sub_motor.i"
-	@echo "... src/driver/sub_motor.s"
 	@echo "... src/driver/uart0.obj"
 	@echo "... src/driver/uart0.i"
 	@echo "... src/driver/uart0.s"
