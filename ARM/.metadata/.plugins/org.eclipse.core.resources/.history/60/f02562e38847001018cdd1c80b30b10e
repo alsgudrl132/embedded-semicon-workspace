@@ -1,0 +1,91 @@
+/*
+ * led.c
+ *
+ *  Created on: Jun 12, 2025
+ *      Author: psh
+ */
+
+#include "led.h"
+
+LED_STRUCT led[8] ={
+		{GPIOC, GPIO_PIN_9, 1, 0},
+		{GPIOB, GPIO_PIN_8, 1, 0},
+		{GPIOB, GPIO_PIN_9, 1, 0},
+		{GPIOA, GPIO_PIN_5, 1, 0},
+		{GPIOA, GPIO_PIN_6, 1, 0},
+		{GPIOA, GPIO_PIN_7, 1, 0},
+		{GPIOB, GPIO_PIN_6, 1, 0},
+		{GPIOC, GPIO_PIN_7, 1, 0},
+};
+
+void ledOn(uint8_t num)
+{
+	for(uint8_t i = 0; i < num; i++) {
+		HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, led[i].onState);
+	}
+
+}
+
+void ledOff(uint8_t num)
+{
+	for(uint8_t i = 0; i < num; i++) {
+		HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, led[i].offState);
+
+	}
+}
+
+
+void ledleftshift(uint8_t num)
+{
+
+	for(uint8_t i = 0; i <= num; i++) {
+		HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, led[i].onState);
+		HAL_Delay(200);
+
+
+	}
+	for(uint8_t i = 0; i <= num; i++) {
+		HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, led[i].offState);
+				HAL_Delay(200);
+	}
+}
+
+void ledrightshift(uint8_t num)
+{
+
+	for(uint8_t i = 7; i <= num; i--) {
+		HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, led[i].onState);
+		HAL_Delay(200);
+
+
+	}
+	for(uint8_t i = 7; i <= num; i--) {
+		HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, led[i].offState);
+				HAL_Delay(200);
+	}
+}
+
+
+
+void ledflow(uint8_t num) {
+    if (num < 3) return;
+    if (num >= MAX_LED_COUNT) num = MAX_LED_COUNT - 1;
+
+    int8_t dir = 1;     // 1: 증가, -1: 감소 방향
+    GPIO_PinState state = led[3].onState;
+    for (int8_t i = 3; ; i += dir) {
+        HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, state);
+        HAL_Delay(200);
+
+        // 경계에 도달하면 다음 단계로 전환
+        if ((dir == 1 && i == num) || (dir == -1 && i == 3)) {
+            // 상태 토글: on → off → on → off
+            state = (state == led[3].onState) ? led[3].offState : led[3].onState;
+            // 방향 반전
+            dir = -dir;
+            // 맨 끝에 오면 홀드 후 탈출
+            if (i == 3 && state == led[3].offState) break;
+        }
+    }
+}
+

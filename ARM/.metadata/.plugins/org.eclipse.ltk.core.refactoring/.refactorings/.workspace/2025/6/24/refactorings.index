@@ -1,0 +1,6 @@
+1749697935816	Delete resource '01_LED2/Debug'
+1749697943722	Delete resource '01_LED2/01_LED Debug.launch'
+1749727661935	Delete resource '01_LED_study/Debug'
+1749727669226	Delete resource '01_LED_study/01_LED2 Debug.launch'
+1749793467951	Delete resource '02_UART_Tx_INT/Core/Inc/led.h'
+1749793472584	Delete resource '02_UART_Tx_INT/Core/Src/led.c'

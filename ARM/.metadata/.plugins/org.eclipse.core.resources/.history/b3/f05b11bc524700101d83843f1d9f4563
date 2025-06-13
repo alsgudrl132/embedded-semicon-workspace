@@ -1,0 +1,17 @@
+#include <stdint.h>
+
+#define RCC_CR_HSEON	(1 << 16)	// HSE 오실레이터 ON 비트
+#define RCC_CR_HSERDY	(1 << 17)	// HSE Ready 플래그
+#define RCC_CR_PLLON	(1 << 24)	// PLL 오실레이터 ON 비트
+#define RCC_CR_PLLRDY	(1 << 25)	// PLL Ready 플래그
+
+#define RCC_PLLCFGR_PLLM_Pos	0	// PLLM 위치
+#define RCC_PLLCFGR_PLLN_Pos	6	// PLLN 위치
+#define RCC_PLLCFGR_PLLP_Pos	16  // PLLP 위치
+#define RCC_PLLCFGR_PLLSRC_Pos	22	// PLLSRC 위치
+
+#define FLASH_ACR_LATENCY_Pos	0
+#define FLASH_ACR_LATENCY_3WS	(3 << FLASH_ACR_LATENCY_Pos) // 3 wait state
+
+#define RCC_CFGR_SW_Pos			0 	// 시스템클럭 소스 선택 스위치
+#define RCC_CFGR_SW_PLL			(2 << RCC_CFGR_SW_Pos)	// PLL 선택

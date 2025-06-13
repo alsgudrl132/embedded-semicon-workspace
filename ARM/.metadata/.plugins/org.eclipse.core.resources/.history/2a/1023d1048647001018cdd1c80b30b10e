@@ -1,0 +1,45 @@
+/*
+ * led.c
+ *
+ *  Created on: Jun 12, 2025
+ *      Author: psh
+ */
+
+#include "led.h"
+
+LED_STRUCT led[8] ={
+		{GPIOC, GPIO_PIN_9, 1, 0},
+		{GPIOB, GPIO_PIN_8, 1, 0},
+		{GPIOB, GPIO_PIN_9, 1, 0},
+		{GPIOA, GPIO_PIN_5, 1, 0},
+		{GPIOA, GPIO_PIN_6, 1, 0},
+		{GPIOA, GPIO_PIN_7, 1, 0},
+		{GPIOB, GPIO_PIN_6, 1, 0},
+		{GPIOC, GPIO_PIN_7, 1, 0},
+};
+
+void ledOn(uint8_t num)
+{
+	for(uint8_t i = 0; i < num; i++) {
+		HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, led[i].onState);
+	}
+
+}
+
+void ledOff(uint8_t num)
+{
+	for(uint8_t i = 0; i < num; i++) {
+		HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, led[i].offState);
+
+	}
+}
+
+
+void ledleftshift(uint8_t num)
+{
+
+	for(uint8_t i = 0; i <= num; i++) {
+		HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, led[i].onState);
+		HAL_Delay(200);
+	}
+}

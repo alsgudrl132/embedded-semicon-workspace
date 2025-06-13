@@ -1,0 +1,30 @@
+/*
+ * led.c
+ *
+ *  Created on: Jun 12, 2025
+ *      Author: psh
+ */
+
+#include "led.h"
+
+LED_STRUCT led[8] ={
+		{GPIOC, GPIO_PIN_9, 1, 0},
+		{GPIOB, GPIO_PIN_8, 1, 0},
+		{GPIOB, GPIO_PIN_9, 1, 0},
+		{GPIOA, GPIO_PIN_5, 1, 0},
+		{GPIOA, GPIO_PIN_6, 1, 0},
+		{GPIOA, GPIO_PIN_7, 1, 0},
+		{GPIOB, GPIO_PIN_6, 1, 0},
+		{GPIOC, GPIO_PIN_7, 1, 0},
+};
+
+void ledOn()
+{
+
+}
+
+void ledOff()
+{
+
+}
+

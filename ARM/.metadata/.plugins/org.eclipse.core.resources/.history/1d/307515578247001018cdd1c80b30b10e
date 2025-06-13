@@ -1,0 +1,23 @@
+/*
+ * led.h
+ *
+ *  Created on: Jun 12, 2025
+ *      Author: psh
+ */
+
+#ifndef INC_LED_H_
+#define INC_LED_H_
+
+#include "main.h"
+
+typedef struct {
+	uint32_t	*port;
+	uint16_t	pinNumber;
+	uint8_t		state;
+}LED_STRUCT;
+
+
+void ledOn();
+void ledOff();
+
+#endif /* INC_LED_H_ */
