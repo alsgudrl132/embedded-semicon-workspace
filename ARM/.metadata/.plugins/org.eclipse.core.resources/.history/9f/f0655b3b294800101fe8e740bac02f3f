@@ -62,12 +62,28 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 	if (huart->Instance == USART2)
 	{
 		HAL_UART_Receive_IT(&huart2, &rxData, sizeof(rxData));
-		if (rxData == 'a' || rxData == 'b' || rxData == 'c' || rxData == 'd') {
-			flag = rxData;
-		} else {
-			flag = 'e';
-		}
+		switch (rxData)
+			{
+				case 'a':
+					flag = 'a';
+					break;
 
+				case 'b':
+					flag = 'b';
+					break;
+
+				case 'c':
+					flag = 'c';
+					break;
+
+				case 'd':
+					flag = 'd';
+					break;
+
+				default:
+					flag = 'e';
+					break;
+			}
 	}
 }
 /* USER CODE END PFP */
