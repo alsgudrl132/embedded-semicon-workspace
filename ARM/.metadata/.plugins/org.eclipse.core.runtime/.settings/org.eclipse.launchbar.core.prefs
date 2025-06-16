@@ -2,7 +2,7 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
 activeLaunchTarget=null\:---
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:01_LED_study Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:01_LED2 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:02_UART_Tx_INT Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:04_TIMER_DELAY Debug
 eclipse.preferences.version=1
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:01_LED\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:01_LED\ Debug/activeLaunchTarget=null\:---
@@ -15,6 +15,14 @@ org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:02_UART_DMA\ Debug/activeLaunch
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:02_UART_INT\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:02_UART_Tx\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:02_UART_Tx_INT\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:02_UART_Tx_INT\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:03_BUTTON\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:03_BUTTON_LED8EA\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:03_BUTTON_LED8EA_DEBOUNCE\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:03_BUTTON_LED8EA_DIV\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:03_BUTTON_LED8EA_DIV\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:04_TIMER\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:04_TIMER_DELAY\ Debug/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:01_LED\ Debug/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:01_LED\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:01_LED2\ Debug/activeLaunchMode=run

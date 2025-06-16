@@ -1,0 +1,20 @@
+/*
+ * button.c
+ *
+ *  Created on: Jun 16, 2025
+ *      Author: psh
+ */
+
+#include "button.h"
+
+BUTTON_CONTROL button[3] =
+{
+		{GPIOC, GPIO_PIN_8, 0},
+		{GPIOC, GPIO_PIN_6, 0},
+		{GPIOC, GPIO_PIN_5, 0},
+};
+
+bool buttonGetPressed(uint8_t num)
+{
+
+}

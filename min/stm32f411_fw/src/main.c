@@ -1,0 +1,19 @@
+/*
+ * main.c
+ *
+ *  Created on: Jun 14, 2025
+ *      Author: psh
+ */
+
+
+#include "main.h"
+
+int main(void)
+{
+  hwInit();
+  apInit();
+
+  apMain();
+
+  return 0;
+}

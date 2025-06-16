@@ -1,0 +1,10 @@
+/*
+ * button.c
+ *
+ *  Created on: Jun 16, 2025
+ *      Author: psh
+ */
+
+#include "button.h"
+
+bool buttonGetPressed(uint8_t num);

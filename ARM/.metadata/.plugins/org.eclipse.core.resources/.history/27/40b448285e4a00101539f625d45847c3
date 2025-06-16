@@ -1,0 +1,17 @@
+/*
+ * button.c
+ *
+ *  Created on: Jun 16, 2025
+ *      Author: psh
+ */
+
+#include "button.h"
+
+typedef struct
+{
+	GPIO_TypeDef	*port;
+	uint16_t		pinNumber;
+	GPIO_PinState	onState;
+}BUTTON_CONTROL;
+
+bool buttonGetPressed(uint8_t num);
