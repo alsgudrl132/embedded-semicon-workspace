@@ -18,6 +18,8 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "tim.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -43,13 +45,19 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+uint8_t rxData[] = "LED ON\n";
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  if(htim->Instancez)
+  {
+    HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_3);
+  }
+}
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -86,6 +94,8 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_USART2_UART_Init();
+  MX_TIM11_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -94,6 +104,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    HAL_TIM_Base_Start_IT(&huart2);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

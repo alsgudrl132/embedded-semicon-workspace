@@ -1,0 +1,88 @@
+/*
+ * led.c
+ *
+ *  Created on: Jun 12, 2025
+ *      Author: psh
+ */
+
+#include "led.h"
+
+LED_CONTROL led[8] =
+{
+		{GPIOC, GPIO_PIN_9, 1, 0},
+		{GPIOB, GPIO_PIN_8, 1, 0},
+		{GPIOB, GPIO_PIN_9, 1, 0},
+		{GPIOA, GPIO_PIN_5, 1, 0},
+		{GPIOA, GPIO_PIN_6, 1, 0},
+		{GPIOA, GPIO_PIN_7, 1, 0},
+		{GPIOB, GPIO_PIN_6, 1, 0},
+		{GPIOC, GPIO_PIN_7, 1, 0},
+};
+
+void ledOn(uint8_t num)
+{
+	for(uint8_t i = 0; i < num; i++)
+	{
+		HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, led[i].onState);
+	}
+}
+
+void ledOff(uint8_t num)
+{
+	for(uint8_t i = 0; i < num; i++)
+	{
+		HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, led[i].offState);
+	}
+}
+
+void ledToggle(uint8_t num)
+{
+	for(uint8_t i = 0; i < num; i++)
+	{
+		HAL_GPIO_TogglePin(led[i].port, led[i].pinNumber);
+	}
+}
+
+
+// 여기부터는 만들것
+void ledLeftShift(uint8_t num)
+{
+	for(uint8_t i = 0; i < num; i++) {
+		HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, led[i].onState);
+		HAL_Delay(200);
+	}
+	for(uint8_t i = 0; i < num; i++) {
+		HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, led[i].offState);
+		HAL_Delay(200);
+	}
+}
+
+void ledRightShift(uint8_t num)
+{
+	for(uint8_t i = num - 1; i < num; i--) {
+		HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, led[i].onState);
+		HAL_Delay(200);
+		if (i == 0) break; // underflow 방지
+	}
+	for(uint8_t i = num - 1; i < num; i--) {
+		HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, led[i].offState);
+		HAL_Delay(200);
+		if (i == 0) break;
+	}
+}
+
+void ledFlower(uint8_t num)
+{
+	for(uint8_t i = 4; i <= num; i++) {
+		HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, led[i].onState);
+		HAL_GPIO_WritePin(led[num-i].port, led[num-i].pinNumber, led[num-i].onState);
+		HAL_Delay(200);
+	}
+	for(uint8_t i = 4; i <= num; i++) {
+		HAL_GPIO_WritePin(led[i].port, led[i].pinNumber, led[i].offState);
+		HAL_GPIO_WritePin(led[num-i].port, led[num-i].pinNumber, led[num-i].offState);
+		HAL_Delay(200);
+	}
+}
+
+

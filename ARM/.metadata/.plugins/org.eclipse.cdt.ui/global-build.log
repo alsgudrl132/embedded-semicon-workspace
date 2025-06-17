@@ -1,14 +1,14 @@
-16:10:32 **** Incremental Build of configuration Debug for project 04_TIMER_DELAY ****
+15:53:54 **** Incremental Build of configuration Debug for project 07_PI ****
 make -j8 all 
-arm-none-eabi-size  04_TIMER_DELAY.elf 
+arm-none-eabi-size  07_PI.elf 
    text	   data	    bss	    dec	    hex	filename
-   6588	     12	   1644	   8244	   2034	04_TIMER_DELAY.elf
+   6436	     12	   1572	   8020	   1f54	07_PI.elf
 Finished building: default.size.stdout
  
-16:10:34 **** Incremental Build of configuration Debug for project 04_TIMER_DELAY ****
+15:53:56 **** Incremental Build of configuration Debug for project 07_PI ****
 make -j8 all 
-arm-none-eabi-size  04_TIMER_DELAY.elf 
+arm-none-eabi-size  07_PI.elf 
    text	   data	    bss	    dec	    hex	filename
-   6588	     12	   1644	   8244	   2034	04_TIMER_DELAY.elf
+   6436	     12	   1572	   8020	   1f54	07_PI.elf
 Finished building: default.size.stdout
  
