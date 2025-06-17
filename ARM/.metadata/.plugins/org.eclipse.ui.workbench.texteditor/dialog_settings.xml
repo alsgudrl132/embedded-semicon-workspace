@@ -3,6 +3,10 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="false"/>
 	<list key="searchhistory">
+		<item value="tim"/>
+		<item value="3"/>
+		<item value="chan"/>
+		<item value="htim"/>
 		<item value="HAL_TIM_PeriodElapsedCallback"/>
 		<item value="void HAL_TIM_Period"/>
 	</list>
