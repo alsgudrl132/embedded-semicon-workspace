@@ -1,0 +1,42 @@
+/*
+ * lcd.c
+ *
+ *  Created on: Jun 18, 2025
+ *      Author: psh
+ */
+
+
+#include "lcd.h"
+
+extern I2C_HandleTypeDef hi2c1;
+
+void lcdCommand(uint8_t command)
+{
+	uint8_t high_nibble, low_nibble;
+	uint8_t i2c_buffer[4];
+	high_nibble = command & 0xf0;
+	low_nibble = (command << 4) & 0xf0;
+}
+
+void lcdData(uint8_t data)
+{
+
+}
+
+void i2cLcd_Init()
+{
+
+}
+
+void lcdString(char *str)
+{
+
+}
+
+
+void moveCursor(uint8_t row, uint8_t col)
+{
+
+}
+
+

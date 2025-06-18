@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;09_STEPPER/Core/Inc/stempper.h&apos; to &apos;stepper.h&apos;" description="Rename resource &apos;stempper.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/stempper.h" name="stepper.h" stamp="1750218081023" updateReferences="true"/>
+</session>

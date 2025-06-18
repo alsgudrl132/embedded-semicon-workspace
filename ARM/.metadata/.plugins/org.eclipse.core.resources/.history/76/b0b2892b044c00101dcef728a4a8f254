@@ -1,0 +1,34 @@
+/*
+ * stepper.c
+ *
+ *  Created on: Jun 18, 2025
+ *      Author: psh
+ */
+
+static const uint8_t HALF_STEP_SEQ[8][4] =
+{
+		{1, 0, 0, 0},
+		{1, 1, 0, 0},
+		{0, 1, 0, 0},
+		{0, 1, 1, 0},
+		{0, 0, 1, 0},
+		{0, 0, 1, 1},
+		{0, 0, 0, 1},
+		{1, 0, 0, 1},
+
+};
+
+void stepMotor(uint8_t step)
+{
+
+}
+
+void rotateSteps(uint16_t steps, uint8_t direction)
+{
+
+}
+
+void rotateDegrees(uint8_t degrees, uint8_t direction)
+{
+
+}

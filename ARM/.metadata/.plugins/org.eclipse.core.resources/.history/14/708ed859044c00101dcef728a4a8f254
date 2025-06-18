@@ -1,0 +1,38 @@
+/*
+ * stepper.c
+ *
+ *  Created on: Jun 18, 2025
+ *      Author: psh
+ */
+#include "stepper.h"
+
+static const uint8_t HALF_STEP_SEQ[8][4] =
+{
+		{1, 0, 0, 0},
+		{1, 1, 0, 0},
+		{0, 1, 0, 0},
+		{0, 1, 1, 0},
+		{0, 0, 1, 0},
+		{0, 0, 1, 1},
+		{0, 0, 0, 1},
+		{1, 0, 0, 1},
+
+};
+
+void stepMotor(uint8_t step)
+{
+	HAL_GPIO_WritePin(IN1_GPIO_Port, IN1_Pin, HALF_STEP_SEQ[setp][0]);
+	HAL_GPIO_WritePin(IN1_GPIO_Port, IN2_Pin, HALF_STEP_SEQ[setp][1]);
+	HAL_GPIO_WritePin(IN1_GPIO_Port, IN3_Pin, HALF_STEP_SEQ[setp][2]);
+	HAL_GPIO_WritePin(IN1_GPIO_Port, IN4_Pin, HALF_STEP_SEQ[setp][3]);
+}
+
+void rotateSteps(uint16_t steps, uint8_t direction)
+{
+
+}
+
+void rotateDegrees(uint8_t degrees, uint8_t direction)
+{
+
+}
