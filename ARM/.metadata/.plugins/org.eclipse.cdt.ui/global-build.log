@@ -1,341 +1,39 @@
-14:59:53 **** Incremental Build of configuration Debug for project 09_STEPPER ****
+20:47:00 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
+make -j8 all 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11136	     12	   1644	  12792	   31f8	BLUETOOTH_STUDY.elf
+Finished building: default.size.stdout
+ 
+20:47:02 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
+make -j8 all 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11136	     12	   1644	  12792	   31f8	BLUETOOTH_STUDY.elf
+Finished building: default.size.stdout
+ 
+20:48:47 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "09_STEPPER.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/09_STEPPER/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_STEPPER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 09_STEPPER.elf
+arm-none-eabi-gcc -o "BLUETOOTH_STUDY.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/BLUETOOTH_STUDY/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLUETOOTH_STUDY.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BLUETOOTH_STUDY.elf
  
-arm-none-eabi-size  09_STEPPER.elf 
-arm-none-eabi-objdump -h -S 09_STEPPER.elf  > "09_STEPPER.list"
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+arm-none-eabi-objdump -h -S BLUETOOTH_STUDY.elf  > "BLUETOOTH_STUDY.list"
    text	   data	    bss	    dec	    hex	filename
-  11536	     12	   1716	  13264	   33d0	09_STEPPER.elf
+  10588	     12	   1644	  12244	   2fd4	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-Finished building: 09_STEPPER.list
+Finished building: BLUETOOTH_STUDY.list
  
-15:00:00 **** Incremental Build of configuration Debug for project 09_STEPPER ****
+20:48:52 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
-arm-none-eabi-size  09_STEPPER.elf 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
    text	   data	    bss	    dec	    hex	filename
-  11536	     12	   1716	  13264	   33d0	09_STEPPER.elf
+  10588	     12	   1644	  12244	   2fd4	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-15:00:35 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "09_STEPPER.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/09_STEPPER/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_STEPPER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 09_STEPPER.elf
- 
-arm-none-eabi-size  09_STEPPER.elf 
-arm-none-eabi-objdump -h -S 09_STEPPER.elf  > "09_STEPPER.list"
-   text	   data	    bss	    dec	    hex	filename
-  11536	     12	   1716	  13264	   33d0	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-Finished building: 09_STEPPER.list
- 
-15:00:38 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-size  09_STEPPER.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11536	     12	   1716	  13264	   33d0	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-15:01:06 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "09_STEPPER.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/09_STEPPER/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_STEPPER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 09_STEPPER.elf
- 
-arm-none-eabi-size  09_STEPPER.elf 
-arm-none-eabi-objdump -h -S 09_STEPPER.elf  > "09_STEPPER.list"
-   text	   data	    bss	    dec	    hex	filename
-  11540	     12	   1716	  13268	   33d4	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-Finished building: 09_STEPPER.list
- 
-15:01:08 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-size  09_STEPPER.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11540	     12	   1716	  13268	   33d4	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-15:02:57 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "09_STEPPER.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/09_STEPPER/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_STEPPER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 09_STEPPER.elf
- 
-arm-none-eabi-size  09_STEPPER.elf 
-arm-none-eabi-objdump -h -S 09_STEPPER.elf  > "09_STEPPER.list"
-   text	   data	    bss	    dec	    hex	filename
-  11460	     12	   1716	  13188	   3384	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-Finished building: 09_STEPPER.list
- 
-15:02:59 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-size  09_STEPPER.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11460	     12	   1716	  13188	   3384	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-15:03:22 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "09_STEPPER.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/09_STEPPER/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_STEPPER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 09_STEPPER.elf
- 
-arm-none-eabi-size  09_STEPPER.elf 
-arm-none-eabi-objdump -h -S 09_STEPPER.elf  > "09_STEPPER.list"
-   text	   data	    bss	    dec	    hex	filename
-  11460	     12	   1716	  13188	   3384	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-Finished building: 09_STEPPER.list
- 
-15:03:24 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-size  09_STEPPER.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11460	     12	   1716	  13188	   3384	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-15:03:38 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "09_STEPPER.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/09_STEPPER/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_STEPPER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 09_STEPPER.elf
- 
-arm-none-eabi-size  09_STEPPER.elf 
-arm-none-eabi-objdump -h -S 09_STEPPER.elf  > "09_STEPPER.list"
-   text	   data	    bss	    dec	    hex	filename
-  11460	     12	   1716	  13188	   3384	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-Finished building: 09_STEPPER.list
- 
-15:03:42 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-size  09_STEPPER.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11460	     12	   1716	  13188	   3384	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-15:04:10 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "09_STEPPER.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/09_STEPPER/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_STEPPER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 09_STEPPER.elf
- 
-arm-none-eabi-size  09_STEPPER.elf 
-arm-none-eabi-objdump -h -S 09_STEPPER.elf  > "09_STEPPER.list"
-   text	   data	    bss	    dec	    hex	filename
-  11460	     12	   1716	  13188	   3384	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-Finished building: 09_STEPPER.list
- 
-15:04:13 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-size  09_STEPPER.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11460	     12	   1716	  13188	   3384	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-15:05:33 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/stepper.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stepper.d" -MT"Core/Src/stepper.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stepper.o"
-arm-none-eabi-gcc -o "09_STEPPER.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/09_STEPPER/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_STEPPER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 09_STEPPER.elf
- 
-arm-none-eabi-size  09_STEPPER.elf 
-arm-none-eabi-objdump -h -S 09_STEPPER.elf  > "09_STEPPER.list"
-   text	   data	    bss	    dec	    hex	filename
-  11460	     12	   1716	  13188	   3384	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-Finished building: 09_STEPPER.list
- 
-15:05:36 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-size  09_STEPPER.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11460	     12	   1716	  13188	   3384	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-15:06:52 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/stepper.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stepper.d" -MT"Core/Src/stepper.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stepper.o"
-arm-none-eabi-gcc -o "09_STEPPER.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/09_STEPPER/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_STEPPER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 09_STEPPER.elf
- 
-arm-none-eabi-size  09_STEPPER.elf 
-arm-none-eabi-objdump -h -S 09_STEPPER.elf  > "09_STEPPER.list"
-   text	   data	    bss	    dec	    hex	filename
-  11460	     12	   1716	  13188	   3384	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-Finished building: 09_STEPPER.list
- 
-15:06:55 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-size  09_STEPPER.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11460	     12	   1716	  13188	   3384	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-15:07:27 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/stepper.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stepper.d" -MT"Core/Src/stepper.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stepper.o"
-arm-none-eabi-gcc -o "09_STEPPER.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/09_STEPPER/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_STEPPER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 09_STEPPER.elf
- 
-arm-none-eabi-size  09_STEPPER.elf 
-arm-none-eabi-objdump -h -S 09_STEPPER.elf  > "09_STEPPER.list"
-   text	   data	    bss	    dec	    hex	filename
-  11456	     12	   1716	  13184	   3380	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-Finished building: 09_STEPPER.list
- 
-15:07:29 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-size  09_STEPPER.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11456	     12	   1716	  13184	   3380	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-15:08:28 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/stepper.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stepper.d" -MT"Core/Src/stepper.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stepper.o"
-arm-none-eabi-gcc -o "09_STEPPER.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/09_STEPPER/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_STEPPER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 09_STEPPER.elf
- 
-arm-none-eabi-size  09_STEPPER.elf 
-arm-none-eabi-objdump -h -S 09_STEPPER.elf  > "09_STEPPER.list"
-   text	   data	    bss	    dec	    hex	filename
-  11456	     12	   1716	  13184	   3380	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-Finished building: 09_STEPPER.list
- 
-15:08:30 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-size  09_STEPPER.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11456	     12	   1716	  13184	   3380	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-15:09:45 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "09_STEPPER.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/09_STEPPER/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_STEPPER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 09_STEPPER.elf
- 
-arm-none-eabi-size  09_STEPPER.elf 
-arm-none-eabi-objdump -h -S 09_STEPPER.elf  > "09_STEPPER.list"
-   text	   data	    bss	    dec	    hex	filename
-  11456	     12	   1716	  13184	   3380	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-Finished building: 09_STEPPER.list
- 
-15:09:47 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-size  09_STEPPER.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11456	     12	   1716	  13184	   3380	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-15:10:26 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "09_STEPPER.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/09_STEPPER/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_STEPPER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 09_STEPPER.elf
- 
-arm-none-eabi-size  09_STEPPER.elf 
-arm-none-eabi-objdump -h -S 09_STEPPER.elf  > "09_STEPPER.list"
-   text	   data	    bss	    dec	    hex	filename
-  11456	     12	   1716	  13184	   3380	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-Finished building: 09_STEPPER.list
- 
-15:10:30 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-size  09_STEPPER.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11456	     12	   1716	  13184	   3380	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-15:10:42 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "09_STEPPER.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/09_STEPPER/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_STEPPER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 09_STEPPER.elf
- 
-arm-none-eabi-size  09_STEPPER.elf 
-arm-none-eabi-objdump -h -S 09_STEPPER.elf  > "09_STEPPER.list"
-   text	   data	    bss	    dec	    hex	filename
-  11456	     12	   1716	  13184	   3380	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-Finished building: 09_STEPPER.list
- 
-15:10:45 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-size  09_STEPPER.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11456	     12	   1716	  13184	   3380	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-15:14:57 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "09_STEPPER.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/09_STEPPER/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_STEPPER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 09_STEPPER.elf
- 
-arm-none-eabi-size  09_STEPPER.elf 
-arm-none-eabi-objdump -h -S 09_STEPPER.elf  > "09_STEPPER.list"
-   text	   data	    bss	    dec	    hex	filename
-  11456	     12	   1716	  13184	   3380	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-Finished building: 09_STEPPER.list
- 
-15:14:58 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-size  09_STEPPER.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11456	     12	   1716	  13184	   3380	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-15:15:34 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "09_STEPPER.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/09_STEPPER/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_STEPPER.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 09_STEPPER.elf
- 
-arm-none-eabi-size  09_STEPPER.elf 
-arm-none-eabi-objdump -h -S 09_STEPPER.elf  > "09_STEPPER.list"
-   text	   data	    bss	    dec	    hex	filename
-  11456	     12	   1716	  13184	   3380	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-Finished building: 09_STEPPER.list
- 
-15:15:39 **** Incremental Build of configuration Debug for project 09_STEPPER ****
-make -j8 all 
-arm-none-eabi-size  09_STEPPER.elf 
-   text	   data	    bss	    dec	    hex	filename
-  11456	     12	   1716	  13184	   3380	09_STEPPER.elf
-Finished building: default.size.stdout
- 
-16:14:21 **** Build of configuration Debug for project 10_ULTRASONIC ****
+20:51:57 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
@@ -350,356 +48,371 @@ arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcp
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
-arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
-arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f411retx.d" -MT"Core/Startup/startup_stm32f411retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f411retx.o" "../Core/Startup/startup_stm32f411retx.s"
-arm-none-eabi-gcc "../Core/Src/delay_us.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/delay_us.d" -MT"Core/Src/delay_us.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/delay_us.o"
 arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
-../Core/Src/main.c: In function '__io_putchar':
-../Core/Src/main.c:62:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
-   62 |   if(ch == '\n')
-      |   ^~
-../Core/Src/main.c:64:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
-   64 |     HAL_UART_Transmit(&huart2, (uint8_t*) &ch, 1, 0xFFFF);
-      |     ^~~~~~~~~~~~~~~~~
-../Core/Src/main.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
-   65 | }
-      | ^
 arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
-arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
-arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
 arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
-arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
 arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/usart.o"
-arm-none-eabi-gcc -o "10_ULTRASONIC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/10_ULTRASONIC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_ULTRASONIC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 10_ULTRASONIC.elf
+arm-none-eabi-gcc -o "BLUETOOTH_STUDY.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/BLUETOOTH_STUDY/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLUETOOTH_STUDY.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BLUETOOTH_STUDY.elf
  
-arm-none-eabi-size  10_ULTRASONIC.elf 
-arm-none-eabi-objdump -h -S 10_ULTRASONIC.elf  > "10_ULTRASONIC.list"
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+arm-none-eabi-objdump -h -S BLUETOOTH_STUDY.elf  > "BLUETOOTH_STUDY.list"
    text	   data	    bss	    dec	    hex	filename
-  12120	     12	   1788	  13920	   3660	10_ULTRASONIC.elf
+  10588	     12	   1644	  12244	   2fd4	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-Finished building: 10_ULTRASONIC.list
+Finished building: BLUETOOTH_STUDY.list
  
-16:30:43 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+20:52:03 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
+make -j8 all 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10588	     12	   1644	  12244	   2fd4	BLUETOOTH_STUDY.elf
+Finished building: default.size.stdout
+ 
+20:52:58 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
+make -j8 all 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10588	     12	   1644	  12244	   2fd4	BLUETOOTH_STUDY.elf
+Finished building: default.size.stdout
+ 
+20:53:04 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
+make -j8 all 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10588	     12	   1644	  12244	   2fd4	BLUETOOTH_STUDY.elf
+Finished building: default.size.stdout
+ 
+21:04:15 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function '__io_putchar':
-../Core/Src/main.c:62:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
-   62 |   if(ch == '\n')
-      |   ^~
-../Core/Src/main.c:64:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
-   64 |     HAL_UART_Transmit(&huart2, (uint8_t*) &ch, 1, 0xFFFF);
-      |     ^~~~~~~~~~~~~~~~~
-../Core/Src/main.c: In function 'HAL_TIM_IC_CaptureCallback':
-../Core/Src/main.c:94:27: warning: comparison between pointer and integer
-   94 |         if(htim->Instance == HAL_TIM_ACTIVE_CHANNEL_1)
-      |                           ^~
-../Core/Src/main.c: In function '__io_putchar':
-../Core/Src/main.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
-   65 | }
-      | ^
-arm-none-eabi-gcc -o "10_ULTRASONIC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/10_ULTRASONIC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_ULTRASONIC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 10_ULTRASONIC.elf
+arm-none-eabi-gcc -o "BLUETOOTH_STUDY.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/BLUETOOTH_STUDY/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLUETOOTH_STUDY.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BLUETOOTH_STUDY.elf
  
-arm-none-eabi-size  10_ULTRASONIC.elf 
-arm-none-eabi-objdump -h -S 10_ULTRASONIC.elf  > "10_ULTRASONIC.list"
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+arm-none-eabi-objdump -h -S BLUETOOTH_STUDY.elf  > "BLUETOOTH_STUDY.list"
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  10588	     12	   1644	  12244	   2fd4	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-Finished building: 10_ULTRASONIC.list
+Finished building: BLUETOOTH_STUDY.list
  
-16:30:45 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:04:18 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
-arm-none-eabi-size  10_ULTRASONIC.elf 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  10588	     12	   1644	  12244	   2fd4	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-16:33:24 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:10:49 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function '__io_putchar':
-../Core/Src/main.c:62:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
-   62 |   if(ch == '\n')
-      |   ^~
-../Core/Src/main.c:64:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
-   64 |     HAL_UART_Transmit(&huart2, (uint8_t*) &ch, 1, 0xFFFF);
-      |     ^~~~~~~~~~~~~~~~~
-../Core/Src/main.c: In function 'HAL_TIM_IC_CaptureCallback':
-../Core/Src/main.c:94:27: warning: comparison between pointer and integer
-   94 |         if(htim->Instance == HAL_TIM_ACTIVE_CHANNEL_1)
-      |                           ^~
-../Core/Src/main.c: In function '__io_putchar':
-../Core/Src/main.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
-   65 | }
-      | ^
-arm-none-eabi-gcc -o "10_ULTRASONIC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/10_ULTRASONIC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_ULTRASONIC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 10_ULTRASONIC.elf
+arm-none-eabi-gcc -o "BLUETOOTH_STUDY.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/BLUETOOTH_STUDY/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLUETOOTH_STUDY.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BLUETOOTH_STUDY.elf
  
-arm-none-eabi-size  10_ULTRASONIC.elf 
-arm-none-eabi-objdump -h -S 10_ULTRASONIC.elf  > "10_ULTRASONIC.list"
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+arm-none-eabi-objdump -h -S BLUETOOTH_STUDY.elf  > "BLUETOOTH_STUDY.list"
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  10588	     12	   1644	  12244	   2fd4	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-Finished building: 10_ULTRASONIC.list
+Finished building: BLUETOOTH_STUDY.list
  
-16:33:26 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:10:51 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
-arm-none-eabi-size  10_ULTRASONIC.elf 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  10588	     12	   1644	  12244	   2fd4	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-16:37:04 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:19:39 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function '__io_putchar':
-../Core/Src/main.c:62:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
-   62 |   if(ch == '\n')
-      |   ^~
-../Core/Src/main.c:64:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
-   64 |     HAL_UART_Transmit(&huart2, (uint8_t*) &ch, 1, 0xFFFF);
-      |     ^~~~~~~~~~~~~~~~~
-../Core/Src/main.c: In function 'HAL_TIM_IC_CaptureCallback':
-../Core/Src/main.c:94:27: warning: comparison between pointer and integer
-   94 |         if(htim->Instance == HAL_TIM_ACTIVE_CHANNEL_1)
-      |                           ^~
-../Core/Src/main.c: In function '__io_putchar':
-../Core/Src/main.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
-   65 | }
-      | ^
-arm-none-eabi-gcc -o "10_ULTRASONIC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/10_ULTRASONIC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_ULTRASONIC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 10_ULTRASONIC.elf
+arm-none-eabi-gcc -o "BLUETOOTH_STUDY.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/BLUETOOTH_STUDY/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLUETOOTH_STUDY.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BLUETOOTH_STUDY.elf
  
-arm-none-eabi-size  10_ULTRASONIC.elf 
-arm-none-eabi-objdump -h -S 10_ULTRASONIC.elf  > "10_ULTRASONIC.list"
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+arm-none-eabi-objdump -h -S BLUETOOTH_STUDY.elf  > "BLUETOOTH_STUDY.list"
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  11056	     12	   1644	  12712	   31a8	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-Finished building: 10_ULTRASONIC.list
+Finished building: BLUETOOTH_STUDY.list
  
-16:37:05 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:19:41 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
-arm-none-eabi-size  10_ULTRASONIC.elf 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  11056	     12	   1644	  12712	   31a8	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-16:37:13 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:20:28 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
-arm-none-eabi-size  10_ULTRASONIC.elf 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  11056	     12	   1644	  12712	   31a8	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-16:38:09 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:24:35 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function '__io_putchar':
-../Core/Src/main.c:62:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
-   62 |   if(ch == '\n')
-      |   ^~
-../Core/Src/main.c:64:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
-   64 |     HAL_UART_Transmit(&huart2, (uint8_t*) &ch, 1, 0xFFFF);
-      |     ^~~~~~~~~~~~~~~~~
-../Core/Src/main.c: In function 'HAL_TIM_IC_CaptureCallback':
-../Core/Src/main.c:94:27: warning: comparison between pointer and integer
-   94 |         if(htim->Instance == HAL_TIM_ACTIVE_CHANNEL_1)
-      |                           ^~
-../Core/Src/main.c: In function '__io_putchar':
-../Core/Src/main.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
-   65 | }
-      | ^
-arm-none-eabi-gcc -o "10_ULTRASONIC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/10_ULTRASONIC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_ULTRASONIC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 10_ULTRASONIC.elf
- 
-arm-none-eabi-size  10_ULTRASONIC.elf 
-arm-none-eabi-objdump -h -S 10_ULTRASONIC.elf  > "10_ULTRASONIC.list"
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  11056	     12	   1644	  12712	   31a8	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-Finished building: 10_ULTRASONIC.list
- 
-16:38:12 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:24:39 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
-arm-none-eabi-size  10_ULTRASONIC.elf 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  11056	     12	   1644	  12712	   31a8	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-16:38:21 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:25:13 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
-arm-none-eabi-size  10_ULTRASONIC.elf 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  11056	     12	   1644	  12712	   31a8	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-16:41:47 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:30:25 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
+make -j8 all 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11056	     12	   1644	  12712	   31a8	BLUETOOTH_STUDY.elf
+Finished building: default.size.stdout
+ 
+21:30:33 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
+make -j8 all 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11056	     12	   1644	  12712	   31a8	BLUETOOTH_STUDY.elf
+Finished building: default.size.stdout
+ 
+21:30:36 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
+make -j8 all 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11056	     12	   1644	  12712	   31a8	BLUETOOTH_STUDY.elf
+Finished building: default.size.stdout
+ 
+21:34:30 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function '__io_putchar':
-../Core/Src/main.c:62:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
-   62 |   if(ch == '\n')
-      |   ^~
-../Core/Src/main.c:64:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
-   64 |     HAL_UART_Transmit(&huart2, (uint8_t*) &ch, 1, 0xFFFF);
-      |     ^~~~~~~~~~~~~~~~~
-../Core/Src/main.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
-   65 | }
-      | ^
-arm-none-eabi-gcc -o "10_ULTRASONIC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/10_ULTRASONIC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_ULTRASONIC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 10_ULTRASONIC.elf
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:60:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   60 |     sprintf((char*)txBuffer, "Received: %c (%d)\r\n", rxData, rxData);
+      |     ^~~~~~~
+../Core/Src/main.c:23:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   22 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   23 | 
+../Core/Src/main.c:60:5: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   60 |     sprintf((char*)txBuffer, "Received: %c (%d)\r\n", rxData, rxData);
+      |     ^~~~~~~
+../Core/Src/main.c:60:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:61:42: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+   61 |     HAL_UART_Transmit(&huart2, txBuffer, strlen((char*)txBuffer), 100);
+      |                                          ^~~~~~
+../Core/Src/main.c:23:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   22 | #include "gpio.h"
+  +++ |+#include <string.h>
+   23 | 
+../Core/Src/main.c:61:42: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+   61 |     HAL_UART_Transmit(&huart2, txBuffer, strlen((char*)txBuffer), 100);
+      |                                          ^~~~~~
+../Core/Src/main.c:61:42: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-gcc -o "BLUETOOTH_STUDY.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/BLUETOOTH_STUDY/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLUETOOTH_STUDY.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BLUETOOTH_STUDY.elf
  
-arm-none-eabi-size  10_ULTRASONIC.elf 
-arm-none-eabi-objdump -h -S 10_ULTRASONIC.elf  > "10_ULTRASONIC.list"
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+arm-none-eabi-objdump -h -S BLUETOOTH_STUDY.elf  > "BLUETOOTH_STUDY.list"
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  14248	     92	   2028	  16368	   3ff0	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-Finished building: 10_ULTRASONIC.list
+Finished building: BLUETOOTH_STUDY.list
  
-16:41:48 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:34:35 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
-arm-none-eabi-size  10_ULTRASONIC.elf 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  14248	     92	   2028	  16368	   3ff0	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-16:41:50 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:35:22 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
-arm-none-eabi-size  10_ULTRASONIC.elf 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  14248	     92	   2028	  16368	   3ff0	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-16:42:20 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:36:49 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
-arm-none-eabi-size  10_ULTRASONIC.elf 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  14248	     92	   2028	  16368	   3ff0	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-16:43:44 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function '__io_putchar':
-../Core/Src/main.c:62:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
-   62 |   if(ch == '\n')
-      |   ^~
-../Core/Src/main.c:64:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
-   64 |     HAL_UART_Transmit(&huart2, (uint8_t*) &ch, 1, 0xFFFF);
-      |     ^~~~~~~~~~~~~~~~~
-../Core/Src/main.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
-   65 | }
-      | ^
-arm-none-eabi-gcc -o "10_ULTRASONIC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/10_ULTRASONIC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_ULTRASONIC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 10_ULTRASONIC.elf
- 
-arm-none-eabi-size  10_ULTRASONIC.elf 
-arm-none-eabi-objdump -h -S 10_ULTRASONIC.elf  > "10_ULTRASONIC.list"
-   text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
-Finished building: default.size.stdout
- 
-Finished building: 10_ULTRASONIC.list
- 
-16:43:45 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
-make -j8 all 
-arm-none-eabi-size  10_ULTRASONIC.elf 
-   text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
-Finished building: default.size.stdout
- 
-16:43:47 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
-make -j8 all 
-arm-none-eabi-size  10_ULTRASONIC.elf 
-   text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
-Finished building: default.size.stdout
- 
-16:44:54 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:38:36 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function '__io_putchar':
-../Core/Src/main.c:66:1: warning: control reaches end of non-void function [-Wreturn-type]
-   66 | }
-      | ^
-arm-none-eabi-gcc -o "10_ULTRASONIC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/10_ULTRASONIC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_ULTRASONIC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 10_ULTRASONIC.elf
+arm-none-eabi-gcc -o "BLUETOOTH_STUDY.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/BLUETOOTH_STUDY/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLUETOOTH_STUDY.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BLUETOOTH_STUDY.elf
  
-arm-none-eabi-size  10_ULTRASONIC.elf 
-arm-none-eabi-objdump -h -S 10_ULTRASONIC.elf  > "10_ULTRASONIC.list"
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+arm-none-eabi-objdump -h -S BLUETOOTH_STUDY.elf  > "BLUETOOTH_STUDY.list"
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  11056	     12	   1644	  12712	   31a8	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-Finished building: 10_ULTRASONIC.list
+Finished building: BLUETOOTH_STUDY.list
  
-16:44:59 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:38:38 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
-arm-none-eabi-size  10_ULTRASONIC.elf 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  11056	     12	   1644	  12712	   31a8	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-16:45:02 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:40:35 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
-arm-none-eabi-size  10_ULTRASONIC.elf 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  11056	     12	   1644	  12712	   31a8	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-16:45:16 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:40:41 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
-arm-none-eabi-size  10_ULTRASONIC.elf 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
    text	   data	    bss	    dec	    hex	filename
-  17592	    104	   2128	  19824	   4d70	10_ULTRASONIC.elf
+  11056	     12	   1644	  12712	   31a8	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-16:47:00 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:41:42 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
+make -j8 all 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11056	     12	   1644	  12712	   31a8	BLUETOOTH_STUDY.elf
+Finished building: default.size.stdout
+ 
+21:45:41 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/usart.o"
+arm-none-eabi-gcc -o "BLUETOOTH_STUDY.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/BLUETOOTH_STUDY/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLUETOOTH_STUDY.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BLUETOOTH_STUDY.elf
+ 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+arm-none-eabi-objdump -h -S BLUETOOTH_STUDY.elf  > "BLUETOOTH_STUDY.list"
+   text	   data	    bss	    dec	    hex	filename
+  11288	     12	   1716	  13016	   32d8	BLUETOOTH_STUDY.elf
+Finished building: default.size.stdout
+ 
+Finished building: BLUETOOTH_STUDY.list
+ 
+21:46:00 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
+make -j8 all 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11288	     12	   1716	  13016	   32d8	BLUETOOTH_STUDY.elf
+Finished building: default.size.stdout
+ 
+21:46:58 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
+make -j8 all 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11288	     12	   1716	  13016	   32d8	BLUETOOTH_STUDY.elf
+Finished building: default.size.stdout
+ 
+21:47:48 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
+make -j8 all 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11288	     12	   1716	  13016	   32d8	BLUETOOTH_STUDY.elf
+Finished building: default.size.stdout
+ 
+21:48:26 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function '__io_putchar':
-../Core/Src/main.c:62:3: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
-   62 |   if(ch == '\n')
-      |   ^~
-../Core/Src/main.c:64:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
-   64 |     HAL_UART_Transmit(&huart2, (uint8_t*) &ch, 1, 0xFFFF);
-      |     ^~~~~~~~~~~~~~~~~
-../Core/Src/main.c:65:1: warning: control reaches end of non-void function [-Wreturn-type]
-   65 | }
-      | ^
-arm-none-eabi-gcc -o "10_ULTRASONIC.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/10_ULTRASONIC/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_ULTRASONIC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 10_ULTRASONIC.elf
+arm-none-eabi-gcc -o "BLUETOOTH_STUDY.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/BLUETOOTH_STUDY/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLUETOOTH_STUDY.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BLUETOOTH_STUDY.elf
  
-arm-none-eabi-size  10_ULTRASONIC.elf 
-arm-none-eabi-objdump -h -S 10_ULTRASONIC.elf  > "10_ULTRASONIC.list"
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+arm-none-eabi-objdump -h -S BLUETOOTH_STUDY.elf  > "BLUETOOTH_STUDY.list"
    text	   data	    bss	    dec	    hex	filename
-  17608	    104	   2128	  19840	   4d80	10_ULTRASONIC.elf
+  11288	     12	   1716	  13016	   32d8	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-Finished building: 10_ULTRASONIC.list
+Finished building: BLUETOOTH_STUDY.list
  
-16:47:03 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:48:28 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
-arm-none-eabi-size  10_ULTRASONIC.elf 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
    text	   data	    bss	    dec	    hex	filename
-  17608	    104	   2128	  19840	   4d80	10_ULTRASONIC.elf
+  11288	     12	   1716	  13016	   32d8	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  
-16:47:16 **** Incremental Build of configuration Debug for project 10_ULTRASONIC ****
+21:49:36 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
 make -j8 all 
-arm-none-eabi-size  10_ULTRASONIC.elf 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
    text	   data	    bss	    dec	    hex	filename
-  17608	    104	   2128	  19840	   4d80	10_ULTRASONIC.elf
+  11288	     12	   1716	  13016	   32d8	BLUETOOTH_STUDY.elf
+Finished building: default.size.stdout
+ 
+21:50:26 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
+make -j8 all 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11288	     12	   1716	  13016	   32d8	BLUETOOTH_STUDY.elf
+Finished building: default.size.stdout
+ 
+21:50:55 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "BLUETOOTH_STUDY.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/psh/workspace_semicon/ARM/BLUETOOTH_STUDY/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BLUETOOTH_STUDY.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BLUETOOTH_STUDY.elf
+ 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+arm-none-eabi-objdump -h -S BLUETOOTH_STUDY.elf  > "BLUETOOTH_STUDY.list"
+   text	   data	    bss	    dec	    hex	filename
+  11288	     12	   1716	  13016	   32d8	BLUETOOTH_STUDY.elf
+Finished building: default.size.stdout
+ 
+Finished building: BLUETOOTH_STUDY.list
+ 
+21:50:57 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
+make -j8 all 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11288	     12	   1716	  13016	   32d8	BLUETOOTH_STUDY.elf
+Finished building: default.size.stdout
+ 
+21:54:14 **** Incremental Build of configuration Debug for project BLUETOOTH_STUDY ****
+make -j8 all 
+arm-none-eabi-size  BLUETOOTH_STUDY.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11288	     12	   1716	  13016	   32d8	BLUETOOTH_STUDY.elf
 Finished building: default.size.stdout
  

@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="hasShownOverlayPopupBefore" value="true"/>
-	<item key="replaceBarOpen" value="false"/>
+	<item key="replaceBarOpen" value="true"/>
 	<list key="searchhistory">
+		<item value="1"/>
+		<item value="usart1"/>
+		<item value="huart1"/>
+		<item value="GNUC"/>
+		<item value="gnuc"/>
 		<item value="11"/>
 		<item value="tim"/>
 		<item value="3"/>
@@ -10,5 +15,8 @@
 		<item value="htim"/>
 		<item value="HAL_TIM_PeriodElapsedCallback"/>
 		<item value="void HAL_TIM_Period"/>
+	</list>
+	<list key="replacehistory">
+		<item value="huart2"/>
 	</list>
 </section>
